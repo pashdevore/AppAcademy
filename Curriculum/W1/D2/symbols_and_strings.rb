@@ -1,13 +1,13 @@
 def super_print(str, options = {})
-  defaults = { :times = 1, :upcase = false, :reverse = false }
+  defaults = { :times => 1, :upcase => false, :reverse => false }
 
   options = defaults.merge(options)
 
-  string = string.upcase if options[:upcase]
-  string = string.reverse if options[:reverse]
+  str = str.upcase if options[:upcase]
+  str = str.reverse if options[:reverse]
 
   options[:times].times do
-    puts string
+    puts str
   end
 
   nil
