@@ -3,13 +3,14 @@ require 'colorize'
 
 class Board
 
-  attr_accessor :grid, :size
+  attr_accessor :grid, :size, :cursor
 
   def initialize(full_board)
     # American Checkers 8x8
     # International Draughts (Checkers) 10 x 10
       @size = 8
       @grid = setup_game(full_board)
+      @cursor = [0,0]
   end
 
   def [](pos)
@@ -41,34 +42,53 @@ class Board
   end
 
   def setup_game(full_board)
-      if full_board
-        setup_grid(self.size)
-        setup_pieces
-      else
-        setup_grid(self.size)
-      end
+    if full_board
+      setup_grid(self.size)
+      setup_pieces
+    else
+      setup_grid(self.size)
+    end
   end
 
-  def render
-    num = "  "
+  def render(cursor)
+    system("clear")
+    num = "   "
     (0...size).each do |n|
       num += n.to_s
-      num += " "
+      num += "  "
     end
+
     print num.blue + "\n"
+
     self.grid.each_with_index do |row, row_idx|
       print row_idx.to_s.blue + " "
-      row.each do |col|
-        if col.nil?
-          print "_ "
-        elsif col.color == :black
-          print "B "
+
+      row.each_with_index do |el, col_idx|
+        if row_idx == cursor[0] && col_idx == cursor[1]
+          print "   ".on_green
+        elsif el.nil? && (col_idx + row_idx).odd?
+          print "   ".on_black
+        elsif el.nil?
+          print "   "
+        elsif el.king
+          print " ʘ ".green.on_black
+        elsif el.color == :black
+          print " ʘ ".red.on_black
         else
-          print "W "
+          print " ʘ ".white.on_black
         end
       end
       print "\n"
     end
     print "\n"
+  end
+
+  def move_cursor(pos)
+    self.cursor = pos
+    render(self.cursor)
+  end
+
+  def inspect
+    nil
   end
 end
