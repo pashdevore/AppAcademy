@@ -15,9 +15,13 @@ class Game
       self.board.render
       # byebug
       puts "#{current_player.mark}'s turn...pick a row and column: "
-      pos = gets.chomp.split(",")
-      row, col = pos[0].to_i, pos[1].to_i
-      current_player.move([row,col])
+      if current_player = player2
+        current_player.determine_best_move
+      else
+        pos = gets.chomp.split(",")
+        row, col = pos[0].to_i, pos[1].to_i
+        current_player.move([row,col])
+      end
       current_player = current_player == player1 ? player2 : player1
     end
 
@@ -70,7 +74,6 @@ class Board
   end
 
   def diags
-    # byebxug
     diagonal1 = [[0,0],[1,1],[2,2]]
     diagonal2 = [[2,0],[1,1],[0,2]]
     diags = [[],[]]
@@ -90,6 +93,17 @@ class Board
 
   def place_mark(mark, pos)
     self[pos] = mark
+  end
+
+  def dup
+    new_board = Board.new
+    new_board.board.each_with_index do |row, row_index|
+      row.each_with_index do |col, col_index|
+        col = self.board[row_index][col_index]
+      end
+    end
+
+    new_board
   end
 
   def render
@@ -130,6 +144,28 @@ class ComputerPlayer
 
   def move(pos)
     self.board.place_mark(self.mark, pos)
+  end
+
+  def determine_best_move
+    byebug
+    self.board.board.each_with_index do |row, row_index|
+      row.each_with_index do |col, col_index|
+        copy = self.board.dup
+        pos = [row_index, col_index]
+        copy.place_mark(self.mark, pos) if copy[[row_index,col_index]].nil?
+        if copy.won?
+          self.board.place_mark(self.mark, [row_index, col_index])
+        else
+          r = (0..2).sample
+          c = (0..2).sample
+          until self.board.board[r][c].empty?
+            r = (0..2).sample
+            c = (0..2).sample
+          end
+          self.board.place_mark(self.mark, [r,c])
+        end
+      end
+    end
   end
 end
 
