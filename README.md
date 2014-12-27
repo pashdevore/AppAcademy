@@ -5,8 +5,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ## Week One
 
-### Day One - Amit Amin
-#### Ruby Basics
+### Day One - Amit Amin - Ruby Basics
 
 + [Remove dups][array], [Two Sum][array], [Towers of Hanoi][array], [My Transpose][array], [Stock Picker][array]
 + [to_s][string], [Caesar Cipher][string]
@@ -22,8 +21,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [maze_solver]: ./Curriculum/W1/D3_CodyMcNamara/maze.rb
 [eight_queens]: ./Curriculum/W1/D3_CodyMcNamara/eight_queens.rb
 
-### Day Two - Anton Shain
-#### Ruby Basics
+### Day Two - Anton Shain - Ruby Basics
 
 + [Rock, Paper, Scissors][methods], [Mixology][methods]
 + [Factors][iteration], [Bubble Sort][iteration], [Substrings][iteration]
@@ -40,8 +38,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [students_courses]: ./Curriculum/W1/D2_AntonShain/students_and_courses.rb
 [tic_tac_toe]: ./Curriculum/W1/D2_AntonShain/tic_tac_toe.rb
 
-### Day Three - Cody McNamara
-#### Basic Design
+### Day Three - Cody McNamara - Basic Design
 
 + [Mastermind][mastermind]
 + [Hangman][hangman]
@@ -53,8 +50,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [maze_solver]: ./Curriculum/W1/D3_CodyMcNamara/maze.rb
 [eight_queens]: ./Curriculum/W1/D3_CodyMcNamara/eight_queens.rb
 
-### Day Four - Sherry Zhou
-#### Algorithms
+### Day Four - Sherry Zhou - Algorithms
 
 + [Blocks][blocks]
 + [Exponentiation][recursion], [Deep dup][recursion], [Fibonacci][recursion], [Binary Search][recursion]
@@ -64,8 +60,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [recursion]: ./Curriculum/W1/D4_SherryZhou/recursion.rb
 [word_chain]: ./Curriculum/W1/D4_SherryZhou/wordchain.rb
 
-### Day Five - Sabice Eads
-#### Algorithms
+### Day Five - Sabice Eads - Algorithms
 
 + [TreeNode][treenode]
 + [Knights Travails][knights_travails]
@@ -77,15 +72,13 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ## Week Two
 
-### Day One - Ashoka Finley
-#### Language Basics II, OO Design
+### Day One - Ashoka Finley - Language Basics II, OO Design
 
 + [Minesweeper][minesweeper]
 
 [minesweeper]: ./Curriculum/W2/D1_AshokaFinley/minesweeper.rb
 
-### Day Two - Nick Arora
-#### Language Basics II, OO Design
+### Day Two - Nick Arora - Language Basics II, OO Design
 
 + [Employee/Manager][employee_manager]
 + [Chess][chess]
@@ -93,22 +86,20 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [employee_manager]: ./Curriculum/W2/D2_NickArora/inheritance.rb
 [chess]: ./Curriculum/W2/D3_NickArora/chess
 
-### Day Three (continued)
-#### Language Basics II, OO Design
+### Day Three (continued) - Language Basics II, OO Design
 
 + [Chess][chess]
 
 [chess]: ./Curriculum/W2/D3_NickArora/chess
 
-### Day Four - Solo
-#### Language Basics II, OO Design
+### Day Four - Solo - Language Basics II, OO Design
 
 + [Checkers][checkers]
 
 [checkers]: ./Curriculum/W2/D4_solo/
 
-### Day Five - Peter Eliot
-#### RSpec
+### Day Five - Peter Eliot - RSpec
+
 
 + [Remove dups][tdd], [Two Sum][tdd], [My Transpose][tdd], [Stock Picker][tdd]
   + [Tests][tests]
