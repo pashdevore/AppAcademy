@@ -34,7 +34,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [rpn]: ./Curriculum/W1/D2_AntonShain/rpn.rb
 [file_shuffle]: ./Curriculum/W1/D2_AntonShain/filesort.rb
 [students_courses]: ./Curriculum/W1/D2_AntonShain/students_and_courses.rb
-[tic_tact_toe]: ./Curriculum/W1/D2_AntonShain/tic_tac_toe.rb
+[tic_tac_toe]: ./Curriculum/W1/D2_AntonShain/tic_tac_toe.rb
 
 ### Day Three
 
