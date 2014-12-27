@@ -18,10 +18,11 @@ class Piece
   def valid_slides
     moves = []
 
-    SLIDING.each do |pos_slide|
-      new_pos = [self.pos[0] + pos_slide[0], self.pos[1] + pos_slide[1]]
+    SLIDING.each do |pos_type|
+      new_pos = [self.pos[0] + pos_type[0], self.pos[1] + pos_type[1]]
       moves << new_pos
     end
+
     moves = moves.select do |move|
       if self.color == :white && !self.king
         move[0].between?(0, self.pos[0]) && move[1].between?(0, board.size)
@@ -33,29 +34,36 @@ class Piece
       end
     end
 
-    moves
+    moves.select { |move| self.board[move].nil? }
   end
 
   def valid_jumps
     moves = []
 
-    # byebug
-    JUMPING.each do |pos_jump|
-      new_pos = [self.pos[0] + pos_jump[0], self.pos[1] + pos_jump[1]]
+    JUMPING.each do |pos_type|
+      new_pos = [self.pos[0] + pos_type[0], self.pos[1] + pos_type[1]]
       moves << new_pos
     end
+
     moves = moves.select do |move|
-      if self.color == :white && !self.king
-        move[0].between?(0, self.pos[0]) && move[1].between?(0, board.size)
-      elsif self.color == :black && !self.king
-        move[0].between?(self.pos[0], board.size) && move[1].between?(0, board.size)
-      else
-        #your a king
-        move[0].between?(0, board.size) && move[1].between?(0, board.size)
+      kill_row = (self.pos[0] + move[0]) / 2
+      kill_col = (self.pos[1] + move[1]) / 2
+      kill = [kill_row, kill_col]
+
+      if !self.board[kill].nil?
+
+        if self.color == :white && !self.king
+          move[0].between?(0, self.pos[0]) && move[1].between?(0, board.size)
+        elsif self.color == :black && !self.king
+          move[0].between?(self.pos[0], board.size) && move[1].between?(0, board.size)
+        else
+          #your a king
+          move[0].between?(0, board.size) && move[1].between?(0, board.size)
+        end
       end
     end
 
-    moves
+    moves.select { |move| self.board[move].nil? }
   end
 
   def perform_slide(to)
@@ -66,13 +74,19 @@ class Piece
   end
 
   def perform_jump(to)
-    self.board[to] = self.board[self.pos]
-    self.board[self.pos] = nil
+    # determine if kill is empty
     kill_row = (self.pos[0] + to[0]) / 2
     kill_col = (self.pos[1] + to[1]) / 2
-    self.pos = to
-    self.board[[kill_row, kill_col]] = nil
-    self.promote?
+
+    if self.board[[kill_row, kill_col]].nil?
+      raise InvalidMoveError
+    else
+      self.board[to] = self.board[self.pos]
+      self.board[self.pos] = nil
+      self.pos = to
+      self.board[[kill_row, kill_col]] = nil
+      self.promote?
+    end
   end
 
   def promote?
@@ -103,7 +117,7 @@ class Piece
       perform_slide(to)
     elsif valid_jumps.include?(to)
       perform_jump(to)
-    elsif !self.board[to].nil?
+    else
       # invalid move!
       raise InvalidMoveError.new("Invalid Move! Your moving to an occupied space!")
     end

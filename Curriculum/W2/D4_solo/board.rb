@@ -5,10 +5,10 @@ class Board
 
   attr_accessor :grid, :size, :cursor
 
-  def initialize(full_board)
+  def initialize(size, full_board)
     # American Checkers 8x8
     # International Draughts (Checkers) 10 x 10
-      @size = 8
+      @size = size
       @grid = setup_game(full_board)
       @cursor = [0,0]
   end
@@ -52,12 +52,13 @@ class Board
 
   def render(cursor)
     system("clear")
+
+    # prints top numbers for board of any size
     num = "   "
     (0...size).each do |n|
       num += n.to_s
       num += "  "
     end
-
     print num.blue + "\n"
 
     self.grid.each_with_index do |row, row_idx|
@@ -65,7 +66,11 @@ class Board
 
       row.each_with_index do |el, col_idx|
         if row_idx == cursor[0] && col_idx == cursor[1]
-          print "   ".on_green
+          if el.nil?
+            print "   ".on_green
+          else
+            print " ʘ ".on_green
+          end
         elsif el.nil? && (col_idx + row_idx).odd?
           print "   ".on_black
         elsif el.nil?
