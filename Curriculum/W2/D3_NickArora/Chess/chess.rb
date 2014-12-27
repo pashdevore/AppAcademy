@@ -59,31 +59,30 @@ class Chess
 
   protected
 
-    def load
-      if File.exists?('savegame.yml')
-        @board = YAML.load_file('savegame.yml')
-        @human.board = @board
-        @computer.board = @board
-      else
-        puts "No save game exists! Press any key to continue."
-        STDIN.getch
-      end
+  def load
+    if File.exists?('savegame.yml')
+      @board = YAML.load_file('savegame.yml')
+      @human.board = @board
+      @computer.board = @board
+    else
+      puts "No save game exists! Press any key to continue."
+      STDIN.getch
+    end
+  end
+
+  def new_or_load
+    input = nil
+    until ['L', 'N'].include?(input)
+      puts "Do you wish to load your last game or start new? (l or n)"
+      input = gets.chomp.upcase
     end
 
-    def new_or_load
-      input = nil
-      until ['L', 'N'].include?(input)
-        puts "Do you wish to load your last game or start new? (l or n)"
-        input = gets.chomp.upcase
-      end
+    load if input == 'L'
+  end
 
-      load if input == 'L'
-    end
-
-    def game_over?
-      @board.checkmate?('w') || @board.checkmate?('b')
-    end
-
+  def game_over?
+    @board.checkmate?('w') || @board.checkmate?('b')
+  end
 end
 
 if __FILE__ == $0

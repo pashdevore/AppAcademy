@@ -1,12 +1,9 @@
 class EmptyPosError < ArgumentError
 end
-
 class InvalidMoveError < ArgumentError
 end
-
 class WrongPieceError < ArgumentError
 end
-
 class NilPieceError < ArgumentError
 end
 
