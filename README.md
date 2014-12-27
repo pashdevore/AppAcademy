@@ -56,7 +56,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 [blocks]: ./Curriculum/W1/D4_SherryZhou/ourarray.rb
 [recursion]: ./Curriculum/W1/D4_SherryZhou/recursion.rb
-[word_chains]: ./Curriculum/W1/D4_SherryZhou/wordchain.rb
+[word_chain]: ./Curriculum/W1/D4_SherryZhou/wordchain.rb
 
 ### Day Five
 
