@@ -5,7 +5,8 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ## Week One
 
-### Day One
+### Day One - Amit Amin
+
 + [Remove dups][array], [Two Sum][array], [Towers of Hanoi][array], [My Transpose][array], [Stock Picker][array]
 + [to_s][string], [Caesar Cipher][string]
 + [Set][enumerables]
@@ -20,7 +21,8 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [maze_solver]: ./Curriculum/W1/D3_CodyMcNamara/maze.rb
 [eight_queens]: ./Curriculum/W1/D3_CodyMcNamara/eight_queens.rb
 
-### Day Two
+### Day Two - Anton Shain
+
 + [Rock, Paper, Scissors][methods], [Mixology][methods]
 + [Factors][iteration], [Bubble Sort][iteration], [Substrings][iteration]
 + [Super Print][super_print]
@@ -36,7 +38,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [students_courses]: ./Curriculum/W1/D2_AntonShain/students_and_courses.rb
 [tic_tac_toe]: ./Curriculum/W1/D2_AntonShain/tic_tac_toe.rb
 
-### Day Three
+### Day Three - Cody McNamara
 
 + [Mastermind][mastermind]
 + [Hangman][hangman]
@@ -48,7 +50,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [maze_solver]: ./Curriculum/W1/D3_CodyMcNamara/maze.rb
 [eight_queens]: ./Curriculum/W1/D3_CodyMcNamara/eight_queens.rb
 
-### Day Four
+### Day Four - Sherry Zhou
 
 + [Blocks][blocks]
 + [Exponentiation][recursion], [Deep dup][recursion], [Fibonacci][recursion], [Binary Search][recursion]
@@ -58,7 +60,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [recursion]: ./Curriculum/W1/D4_SherryZhou/recursion.rb
 [word_chain]: ./Curriculum/W1/D4_SherryZhou/wordchain.rb
 
-### Day Five
+### Day Five - Sabice Eads
 
 + [TreeNode][treenode]
 + [Knights Travails][knights_travails]
@@ -67,3 +69,47 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [treenode]: ./Curriculum/W1/D5_SabiceEads/polytreenode.rb
 [knights_travails]: ./Curriculum/W1/D5_SabiceEads/knights_travails.rb
 [tic_tac_toe_ai]: ./Curriculum/W1/D5_SabiceEads/TicTacToeAI/lib/
+
+## Week Two
+
+### Day One - Ashoka Finley
+
++ [Minesweeper][minesweeper]
+
+[minesweeper]: ./Curriculum/W2/D1_AshokaFinley/minesweeper.rb
+
+### Day Two - Nick Arora
+
++ [Employee/Manager][employee_manager]
++ [Chess][chess]
+
+[employee_manager]: ./Curriculum/W2/D2_NickArora/inheritance.rb
+[chess]: ./Curriculum/W2/D3_NickArora/chess
+
+### Day Three (continued)
+
++ [Chess][chess]
+
+[chess]: ./Curriculum/W2/D3_NickArora/chess
+
+### Day Four - Solo
+
++ [Checkers][checkers]
+
+[checkers]: ./Curriculum/W2/D4_solo/
+
+### Day Five - Peter Eliot
+
++ [Remove dups][tdd], [Two Sum][tdd], [My Transpose][tdd], [Stock Picker][tdd]
+  + [Tests][tests]
++ [Towers of Hanoi][tower_tdd]
+  + [Tests][tower_tests]
++ [Poker][poker]
+  + [Tests][poker_tests]
+
+[tdd]: ./Curriculum/W2/D5_PeterEliot/lib/array.rb
+[tests]: ./Curriculum/W2/D5_PeterEliot/spec/array_spec.rb
+[tower_tdd]: ./Curriculum/W2/D5_PeterEliot/lib/hanoi.rb
+[tower_tests]: ./Curriculum/W2/D5_PeterEliot/spec/hanoi_spec.rb
+[poker]: ./Curriculum/W2/D5_PeterEliot/lib/
+[poker_tests]: ./Curriculum/W2/D5_PeterEliot/spec
