@@ -4,7 +4,7 @@ require 'colorize'
 module Minesweeper
   class Board
 
-    attr_accessor :grid, :get_cell, :grid
+    attr_accessor :grid, :get_cell, :cursor
 
     def initialize
       @grid  = []
@@ -16,6 +16,8 @@ module Minesweeper
         @grid << a
       end
       place_bombs(30)
+
+      @cursor = [0,0]
     end
 
     def get_cell(position)
