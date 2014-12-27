@@ -5,7 +5,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ## Week One
 
-### Day One - Amit Amin - Ruby Basics
+### Day One - [Amit Amin][amit-p-amin] - Ruby Basics
 
 + [Remove dups][array], [Two Sum][array], [Towers of Hanoi][array], [My Transpose][array], [Stock Picker][array]
 + [to_s][string], [Caesar Cipher][string]
@@ -20,8 +20,9 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [in_words]: ./Curriculum/W1/D1_AmitAmin/test-first-ruby-master/lib/15_in_words.rb
 [maze_solver]: ./Curriculum/W1/D3_CodyMcNamara/maze.rb
 [eight_queens]: ./Curriculum/W1/D3_CodyMcNamara/eight_queens.rb
+[amit-p-amin]: http://github.com/Amit-P-Amin
 
-### Day Two - Anton Shain - Ruby Basics
+### Day Two - [Anton Shain][antongb] - Ruby Basics
 
 + [Rock, Paper, Scissors][methods], [Mixology][methods]
 + [Factors][iteration], [Bubble Sort][iteration], [Substrings][iteration]
@@ -37,8 +38,9 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [file_shuffle]: ./Curriculum/W1/D2_AntonShain/filesort.rb
 [students_courses]: ./Curriculum/W1/D2_AntonShain/students_and_courses.rb
 [tic_tac_toe]: ./Curriculum/W1/D2_AntonShain/tic_tac_toe.rb
+[antongb]: http://github.com/antongb
 
-### Day Three - Cody McNamara - Basic Design
+### Day Three - [Cody McNamara][codymcnamara] - Basic Design
 
 + [Mastermind][mastermind]
 + [Hangman][hangman]
@@ -49,8 +51,9 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [hangman]: ./Curriculum/W1/D3_CodyMcNamara/hangman.rb
 [maze_solver]: ./Curriculum/W1/D3_CodyMcNamara/maze.rb
 [eight_queens]: ./Curriculum/W1/D3_CodyMcNamara/eight_queens.rb
+[codymcnamara]: http://github.com/codymcnamara
 
-### Day Four - Sherry Zhou - Algorithms
+### Day Four - [Sherry Zhou][zhoux10] - Algorithms
 
 + [Blocks][blocks]
 + [Exponentiation][recursion], [Deep dup][recursion], [Fibonacci][recursion], [Binary Search][recursion]
@@ -59,6 +62,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [blocks]: ./Curriculum/W1/D4_SherryZhou/ourarray.rb
 [recursion]: ./Curriculum/W1/D4_SherryZhou/recursion.rb
 [word_chain]: ./Curriculum/W1/D4_SherryZhou/wordchain.rb
+[zhoux10]: http://github.com/zhoux10
 
 ### Day Five - Sabice Eads - Algorithms
 
@@ -79,13 +83,14 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [minesweeper]: ./Curriculum/W2/D1_AshokaFinley/minesweeper.rb
 [thissaysnothing]: http://github.com/thissaysnothing
 
-### Day Two - Nick Arora - Language Basics II, OO Design
+### Day Two - [Nick Arora][nickarora] - Language Basics II, OO Design
 
 + [Employee/Manager][employee_manager]
 + [Chess][chess]
 
 [employee_manager]: ./Curriculum/W2/D2_NickArora/inheritance.rb
 [chess]: ./Curriculum/W2/D3_NickArora/chess
+[nickarora]: http://github.com/nickarora
 
 ### Day Three (continued) - Language Basics II, OO Design
 
@@ -99,7 +104,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 [checkers]: ./Curriculum/W2/D4_solo/
 
-### Day Five - Peter Eliot - RSpec
+### Day Five - [Peter Eliot][peterjeliot] - RSpec
 
 
 + [Remove dups][tdd], [Two Sum][tdd], [My Transpose][tdd], [Stock Picker][tdd]
@@ -115,3 +120,4 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [tower_tests]: ./Curriculum/W2/D5_PeterEliot/spec/hanoi_spec.rb
 [poker]: ./Curriculum/W2/D5_PeterEliot/lib/
 [poker_tests]: ./Curriculum/W2/D5_PeterEliot/spec
+[peterjeliot]: http://github.com/peterjeliot
