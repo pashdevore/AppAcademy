@@ -10,19 +10,29 @@ class Game
   def play
     player1 = HumanPlayer.new("X", self.board)
     player2 = ComputerPlayer.new("O", self.board)
+
+    # set current player to Human
     current_player = player1
+
     until self.board.won?
       self.board.render
-      # byebug
       puts "#{current_player.mark}'s turn...pick a row and column: "
-      if current_player = player2
+
+      if current_player == player2
         current_player.determine_best_move
+        current_player = player1
       else
-        pos = gets.chomp.split(",")
-        row, col = pos[0].to_i, pos[1].to_i
-        current_player.move([row,col])
+        begin
+          pos = gets.chomp.split(",")
+          row, col = pos[0].to_i, pos[1].to_i
+          current_player.move([row,col])
+          current_player = player2
+        rescue
+          puts "You can't place a mark there!"
+          current_player = player1
+          retry
+        end
       end
-      current_player = current_player == player1 ? player2 : player1
     end
 
     self.board.render
@@ -83,12 +93,16 @@ class Board
   end
 
   def won?
+    draw = true
     (rows + cols + diags).each do |three|
       return true if three.all? { |chr| chr == 'X' }
       return true if three.all? { |chr| chr == 'O' }
+      three.each do |chr|
+        draw = false if chr.nil?
+      end
     end
 
-    false
+    draw
   end
 
   def place_mark(mark, pos)
@@ -96,14 +110,17 @@ class Board
   end
 
   def dup
-    new_board = Board.new
-    new_board.board.each_with_index do |row, row_index|
-      row.each_with_index do |col, col_index|
-        col = self.board[row_index][col_index]
+    b = Board.new
+
+    (0...b.board.count).each do |row|
+      (0...b.board.count).each do |col|
+        if !self.board[row][col].nil?
+          b.board[row][col] = String.new(self.board[row][col])
+        end
       end
     end
 
-    new_board
+    b
   end
 
   def render
@@ -130,7 +147,11 @@ class HumanPlayer
   end
 
   def move(pos)
-    self.board.place_mark(self.mark, pos)
+    unless self.board[pos].nil?
+      raise ArgumentError
+    else
+      self.board.place_mark(self.mark, pos)
+    end
   end
 end
 
@@ -147,24 +168,48 @@ class ComputerPlayer
   end
 
   def determine_best_move
-    byebug
+    should_continue = true
+    # go through board to see if computer has winning move
     self.board.board.each_with_index do |row, row_index|
       row.each_with_index do |col, col_index|
         copy = self.board.dup
         pos = [row_index, col_index]
-        copy.place_mark(self.mark, pos) if copy[[row_index,col_index]].nil?
+        copy.place_mark(self.mark, pos) if copy[[row_index, col_index]].nil?
         if copy.won?
           self.board.place_mark(self.mark, [row_index, col_index])
+          should_continue = false
         else
-          r = (0..2).sample
-          c = (0..2).sample
-          until self.board.board[r][c].empty?
-            r = (0..2).sample
-            c = (0..2).sample
-          end
-          self.board.place_mark(self.mark, [r,c])
+          copy.place_mark("|_|", [row_index, col_index])
         end
       end
+    end
+
+    # go through board to see if human has winning move and stop him
+    self.board.board.each_with_index do |row, row_index|
+      row.each_with_index do |col, col_index|
+        opponent = self.mark == 'O' ? 'X' : 'O'
+
+        copy = self.board.dup
+        pos = [row_index, col_index]
+        copy.place_mark(opponent, pos) if copy[[row_index, col_index]].nil?
+        if copy.won?
+          self.board.place_mark(self.mark, [row_index, col_index])
+          should_continue = false
+        else
+          copy.place_mark("|_|", [row_index, col_index])
+        end
+      end
+    end
+
+    if should_continue
+      # if there are no winning moves
+      r = (0..2).to_a.sample
+      c = (0..2).to_a.sample
+      until self.board.board[r][c].nil?
+        r = (0..2).to_a.sample
+        c = (0..2).to_a.sample
+      end
+      self.board.place_mark(self.mark, [r,c])
     end
   end
 end
