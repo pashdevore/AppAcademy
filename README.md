@@ -7,11 +7,11 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ### Day One
 + [Remove dups][array], [Two Sum][array], [Towers of Hanoi][array], [My Transpose][array], [Stock Picker][array]
-+[to_s][string], [Caesar Cipher][string]
-+[Set][enumerables]
-+[In Words][in_words]
-+[Maze Solver][maze_solver] (see day three)
-+[Eight Queens][eight_queens] (see day three)
++ [to_s][string], [Caesar Cipher][string]
++ [Set][enumerables]
++ [In Words][in_words]
++ [Maze Solver][maze_solver] (see day three)
++ [Eight Queens][eight_queens] (see day three)
 
 [array]: ./Curriculum/W1/D1_AmitAmin/array.rb
 [string]: ./Curriculum/W1/D1_AmitAmin/string.rb
