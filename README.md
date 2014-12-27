@@ -72,11 +72,12 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ## Week Two
 
-### Day One - Ashoka Finley - Language Basics II, OO Design
+### Day One - [Ashoka Finley][thissaysnothing] - Language Basics II, OO Design
 
 + [Minesweeper][minesweeper]
 
 [minesweeper]: ./Curriculum/W2/D1_AshokaFinley/minesweeper.rb
+[thissaysnothing]: http://github.com/thissaysnothing
 
 ### Day Two - Nick Arora - Language Basics II, OO Design
 
