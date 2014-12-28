@@ -129,9 +129,11 @@ _Check out the program:_ [AppAcademy][aawebsite]
 + [SQLZoo][sqlzoo]
 
 [sqlzoo]: ./Curriculum/W3/D1_DouglasBlumeyer/skeleton/lib/
+[DougBlumeyer]: http://github.com/DougBlumeyer
 
 ### Day Two - [Sebastian Jay][sebastianrjay] - Intro to SQL
 
 + [AA Questions][aa_questions]
 
 [aa_questions]: ./Curriculum/W3/D2_SebastianJay/questions_database.rb
+[sebastianrjay]: http://github.com/sebastianrjay
