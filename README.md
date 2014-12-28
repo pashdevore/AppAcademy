@@ -121,3 +121,17 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [poker]: ./Curriculum/W2/D5_PeterEliot/lib/
 [poker_tests]: ./Curriculum/W2/D5_PeterEliot/spec
 [peterjeliot]: http://github.com/peterjeliot
+
+## Week Three
+
+### Day One - [Douglas Blumeyer][DougBlumeyer] - Intro to SQL
+
++ [SQLZoo][sqlzoo]
+
+[sqlzoo]: ./Curriculum/W3/D1_DouglasBlumeyer/skeleton/lib/
+
+### Day Two - [Sebastian Jay][sebastianrjay] - Intro to SQL
+
++ [AA Questions][aa_questions]
+
+[aa_questions]: ./Curriculum/W3/D2_SebastianJay/questions_database.rb
