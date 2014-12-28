@@ -70,7 +70,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + [Array blocks][blocks]
 + Recursion
   + [Exponentiation][recursion], [Deep dup][recursion], [Fibonacci][recursion], [Binary Search][recursion]
-+ Project
++ Projects
   + [Word Chains][word_chain]
 
 [blocks]: ./Curriculum/W1/D4_SherryZhou/ourarray.rb
@@ -80,9 +80,11 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ### Day Five - Sabice Eads - Algorithms
 
-+ [TreeNode][treenode]
-+ [Knights Travails][knights_travails]
-+ [Tic-Tac-Toe AI][tic_tac_toe_ai]
++ Intro Data Structures
+  + [TreeNode][treenode]
++ Projects
+  + [Knights Travails][knights_travails]
+  + [Tic-Tac-Toe AI][tic_tac_toe_ai]
 
 [treenode]: ./Curriculum/W1/D5_SabiceEads/polytreenode.rb
 [knights_travails]: ./Curriculum/W1/D5_SabiceEads/knights_travails.rb
@@ -92,15 +94,18 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ### Day One - [Ashoka Finley][thissaysnothing] - Language Basics II, OO Design
 
-+ [Minesweeper][minesweeper]
++ Projects
+  + [Minesweeper][minesweeper]
 
 [minesweeper]: ./Curriculum/W2/D1_AshokaFinley/minesweeper.rb
 [thissaysnothing]: http://github.com/thissaysnothing
 
 ### Day Two - [Nick Arora][nickarora] - Language Basics II, OO Design
 
-+ [Employee/Manager][employee_manager]
-+ [Chess][chess]
++ Class Inheritance
+  + [Employee/Manager][employee_manager]
++ Projects
+  + [Chess][chess]
 
 [employee_manager]: ./Curriculum/W2/D2_NickArora/inheritance.rb
 [chess]: ./Curriculum/W2/D3_NickArora/chess
@@ -108,25 +113,27 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ### Day Three (continued) - Language Basics II, OO Design
 
-+ [Chess][chess]
++ Projects
+  + [Chess][chess]
 
 [chess]: ./Curriculum/W2/D3_NickArora/chess
 
 ### Day Four - Solo - Language Basics II, OO Design
 
-+ [Checkers][checkers]
++ Projects
+  + [Checkers][checkers]
 
 [checkers]: ./Curriculum/W2/D4_solo/
 
 ### Day Five - [Peter Eliot][peterjeliot] - RSpec
 
-
-+ [Remove dups][tdd], [Two Sum][tdd], [My Transpose][tdd], [Stock Picker][tdd]
-  + [Tests][tests]
-+ [Towers of Hanoi][tower_tdd]
-  + [Tests][tower_tests]
-+ [Poker][poker]
-  + [Tests][poker_tests]
++ Projects
+  + [Remove dups][tdd], [Two Sum][tdd], [My Transpose][tdd], [Stock Picker][tdd]
+    + [Tests][tests]
+  + [Towers of Hanoi][tower_tdd]
+    + [Tests][tower_tests]
+  + [Poker][poker]
+    + [Tests][poker_tests]
 
 [tdd]: ./Curriculum/W2/D5_PeterEliot/lib/array.rb
 [tests]: ./Curriculum/W2/D5_PeterEliot/spec/array_spec.rb
@@ -140,14 +147,16 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ### Day One - [Douglas Blumeyer][DougBlumeyer] - Intro to SQL
 
-+ [SQLZoo][sqlzoo]
++ Projects
+  + [SQLZoo][sqlzoo]
 
 [sqlzoo]: ./Curriculum/W3/D1_DouglasBlumeyer/skeleton/lib/
 [DougBlumeyer]: http://github.com/DougBlumeyer
 
 ### Day Two - [Sebastian Jay][sebastianrjay] - Intro to SQL
 
-+ [AA Questions][aa_questions]
++ Projects
+  + [AA Questions][aa_questions]
 
 [aa_questions]: ./Curriculum/W3/D2_SebastianJay/questions_database.rb
 [sebastianrjay]: http://github.com/sebastianrjay
