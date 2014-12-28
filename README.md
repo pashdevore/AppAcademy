@@ -12,7 +12,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
     + [Remove dups][array], [Two Sum][array], [Towers of Hanoi][array], [My Transpose][array], [Stock Picker][array]
   + String
     + [to_s][string], [Caesar Cipher][string]
-  + Enumerables
+  + Enumerable
     + [Set][enumerables]
 + Projects
   + [In Words][in_words]
@@ -29,11 +29,16 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ### Day Two - [Anton Shain][antongb] - Ruby Basics
 
-+ [Rock, Paper, Scissors][methods], [Mixology][methods]
-+ [Factors][iteration], [Bubble Sort][iteration], [Substrings][iteration]
-+ [Super Print][super_print]
-+ [Guessing Game][guess], [Reverse Polish Notation Calculator][rpn], [File Shuffle][file_shuffle]
-+ [Students & Courses][students_courses], [Tic-Tac-Toe][tic_tac_toe]
++ Methods
+  + [Rock, Paper, Scissors][methods], [Mixology][methods]
++ Iteration
+  + [Factors][iteration], [Bubble Sort][iteration], [Substrings][iteration]
++ Symbols, Strings, Option Hashes
+  + [Super Print][super_print]
++ Input/Output
+  + [Guessing Game][guess], [Reverse Polish Notation Calculator][rpn], [File Shuffle][file_shuffle]
++ Classes
+  + [Students & Courses][students_courses], [Tic-Tac-Toe][tic_tac_toe]
 
 [methods]: ./Curriculum/W1/D2_AntonShain/methods.rb
 [iteration]: ./Curriculum/W1/D2_AntonShain/iteration.rb
@@ -47,10 +52,11 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ### Day Three - [Cody McNamara][codymcnamara] - Basic Design
 
-+ [Mastermind][mastermind]
-+ [Hangman][hangman]
-+ [Maze Solver][maze_solver]
-+ [Eight Queens][eight_queens]
++ Projects
+  + [Mastermind][mastermind]
+  + [Hangman][hangman]
+  + [Maze Solver][maze_solver]
+  + [Eight Queens][eight_queens]
 
 [mastermind]: ./Curriculum/W1/D3_CodyMcNamara/mastermind.rb
 [hangman]: ./Curriculum/W1/D3_CodyMcNamara/hangman.rb
@@ -60,9 +66,12 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ### Day Four - [Sherry Zhou][zhoux10] - Algorithms
 
-+ [Blocks][blocks]
-+ [Exponentiation][recursion], [Deep dup][recursion], [Fibonacci][recursion], [Binary Search][recursion]
-+ [Word Chains][word_chain]
++ Blocks
+  + [Array blocks][blocks]
++ Recursion
+  + [Exponentiation][recursion], [Deep dup][recursion], [Fibonacci][recursion], [Binary Search][recursion]
++ Project
+  + [Word Chains][word_chain]
 
 [blocks]: ./Curriculum/W1/D4_SherryZhou/ourarray.rb
 [recursion]: ./Curriculum/W1/D4_SherryZhou/recursion.rb
