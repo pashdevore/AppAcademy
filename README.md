@@ -7,12 +7,17 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 ### Day One - [Amit Amin][amit-p-amin] - Ruby Basics
 
-+ [Remove dups][array], [Two Sum][array], [Towers of Hanoi][array], [My Transpose][array], [Stock Picker][array]
-+ [to_s][string], [Caesar Cipher][string]
-+ [Set][enumerables]
-+ [In Words][in_words]
-+ [Maze Solver][maze_solver]
-+ [Eight Queens][eight_queens]
++ Primitive Ruby Types
+  + Array
+    + [Remove dups][array], [Two Sum][array], [Towers of Hanoi][array], [My Transpose][array], [Stock Picker][array]
+  + String
+    + [to_s][string], [Caesar Cipher][string]
+  + Enumerables
+    + [Set][enumerables]
++ Projects
+  + [In Words][in_words]
+  + [Maze Solver][maze_solver]
+  + [Eight Queens][eight_queens]
 
 [array]: ./Curriculum/W1/D1_AmitAmin/array.rb
 [string]: ./Curriculum/W1/D1_AmitAmin/string.rb
