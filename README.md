@@ -23,7 +23,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [string]: ./Curriculum/W1/D1_AmitAmin/string.rb
 [enumerables]: ./Curriculum/W1/D1_AmitAmin/enumerables.rb
 [in_words]: ./Curriculum/W1/D1_AmitAmin/test-first-ruby-master/lib/15_in_words.rb
-[maze_solver]: ./Curriculum/W1/D3_CodyMcNamara/maze.rb
+[maze_solver]: ./Curriculum/W1/D3_CodyMcNamara/maze_solver.rb
 [eight_queens]: ./Curriculum/W1/D3_CodyMcNamara/eight_queens.rb
 [amit-p-amin]: http://github.com/Amit-P-Amin
 
@@ -60,7 +60,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 [mastermind]: ./Curriculum/W1/D3_CodyMcNamara/mastermind.rb
 [hangman]: ./Curriculum/W1/D3_CodyMcNamara/hangman.rb
-[maze_solver]: ./Curriculum/W1/D3_CodyMcNamara/maze.rb
+[maze_solver]: ./Curriculum/W1/D3_CodyMcNamara/maze_solver.rb
 [eight_queens]: ./Curriculum/W1/D3_CodyMcNamara/eight_queens.rb
 [codymcnamara]: http://github.com/codymcnamara
 
