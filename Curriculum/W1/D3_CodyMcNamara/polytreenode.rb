@@ -58,8 +58,4 @@ class PolyTreeNode
 
     queue.first
   end
-
-  def inspect
-    @value
-  end
 end
