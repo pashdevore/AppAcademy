@@ -14,6 +14,8 @@ class MazeSolver
     @visited_pos = []
   end
 
+  # file reading and maze constructor methods
+
   def read_file(file_name)
     file = File.open(file_name)
     arr = file.readlines
@@ -39,55 +41,102 @@ class MazeSolver
     maze_arr
   end
 
+  # tree and path construction methods
+
   def build_move_tree
     queue = [self.starting_node]
-    finish = determine_end
+    final_pos = determine_end
 
     until queue.empty?
       current_node = queue.shift
       current_pos = current_node.value
-      new_move_positions(current_pos).each do |new_move_position|
-        x,y = new_move_position
-        next if self.maze[x][y] != " "
-        child_node = PolyTreeNode.new(new_move_position)
-        child_node.g = determine_g(current_pos, child_node.value)
-        child_node.h = determine_h(current_pos, finish)
-        child_node.f = child_node.g + child_node.h
+
+      new_move_positions(current_pos).each do |move|
+        child_node = PolyTreeNode.new(move)
         child_node.parent = current_node
-        queue << child_node
+
+        child_node.g = determine_g(current_node.value, child_node.value)
+        child_node.h = determine_h(current_node.value, final_pos)
+        child_node.f = child_node.g + child_node.h
+
+        queue << child_node unless queue.include?(child_node)
       end
     end
   end
 
-  def determine_best_path
+  def construct_path
+    # byebug
     path = [self.starting_node]
-    best_f = 10000
-    best_node = nil
-    finish = determine_end
-    visited = []
+    current_node = self.starting_node
+    visited = [self.starting_node]
+    done = false
 
-    byebug
-    until path.last.value == finish
-      path.last.children.each do |child|
-        if child.f < best_f && !child.children.empty? && !visited.include?(child)
-          best_f = child.f
-          best_node = child
+    until done
+      f_value = 1000
+      best_node = nil
+      current_node.children.each do |child_node|
+        if child_node.f < f_value && !visited.include?(child_node)
+          best_node = child_node
+          f_value = child_node.f
         end
       end
 
-      if path.last == best_node
-        visited << path.pop
-      elsif !visited.include?(best_node)
+        # have to check that best_node is not nil
+        # if it is we haven't got a better move
+        # backtrack - add to visited, reprint, set current_node to path.last
+
+      f_value = 1000
+
+      if best_node.nil? && current_node != self.starting_node
+        self.maze[current_node.value[0]][current_node.value[1]] = " "
+        path.pop
+        current_node = path.last
+      elsif best_node.value == determine_end
+        done = true
+      else
+        f_value = 1000
         path << best_node
+        visited << best_node
+        current_node = best_node
+        self.maze[best_node.value[0]][best_node.value[1]] = "X"
       end
 
-      p path
-      best_f = 10000
+      render
     end
-
-    path
   end
 
+  # helper methods
+
+  # renders maze
+  def render
+    self.maze.each do |arr|
+      p arr
+    end
+  end
+
+  # determine start pos by searching for 'S' in .txt file
+  def determine_start
+    self.maze.each_with_index do |row, index|
+      start_pos = nil
+      if row.include?("S")
+        start_pos = row.index("S")
+        return [index, start_pos]
+      end
+    end
+  end
+
+  # determine end pos by searching for 'E' in .txt file
+  def determine_end
+    self.maze.each_with_index do |row, index|
+      finish_pos = nil
+      if row.include?("E")
+        finish_pos = row.index("E")
+        return [index, finish_pos]
+      end
+    end
+  end
+
+  # determine new moves from pos, checking if it is valid
   def new_move_positions(pos)
     new_moves = []
 
@@ -101,68 +150,46 @@ class MazeSolver
     new_moves
   end
 
+  # returns valid moves from pos
   def valid_moves(pos)
     x, y = pos
 
-    moves = [[x + 1, y + 1],
-             [x + 1, y - 1],
-             [x + 1, y + 0],
-             [x - 1, y + 1],
-             [x - 1, y - 1],
-             [x - 1, y + 0],
+    moves = [[x + 1, y + 0],
              [x + 0, y + 1],
+             [x - 1, y + 0],
              [x + 0, y - 1]]
 
     moves.select { |each| valid_move?(each) }
   end
 
+  # determines if move to pos is valid
   def valid_move?(pos)
     x,y = pos
-    if x < 0 || y < 0 || x > self.maze_width || y > self.maze_height
+    if x < 0 || y < 0 || x > self.maze_height || y > self.maze_width
       false
-    elsif maze[x][y] != " "
+    elsif maze[x][y] == "*"
       false
     else
       true
     end
   end
 
-  def determine_start
-    self.maze.each_with_index do |row, index|
-      start_pos = nil
-      if row.include?("S")
-        start_pos = row.index("S")
-        return [index, start_pos]
-      end
-    end
-  end
-
-  def determine_end
-    self.maze.each_with_index do |row, index|
-      finish_pos = nil
-      if row.include?("E")
-        finish_pos = row.index("E")
-        return [index, finish_pos]
-      end
-    end
-  end
-
-  # A* functions
+  # A* helper functions
 
   # movement cost to move from current node to adjacent node
-  def determine_g(current_node, adj_node)
-    x1, y1 = current_node
-    x2, y2 = adj_node
+  def determine_g(current_pos, adj_pos)
+    x1, y1 = current_pos
+    x2, y2 = adj_pos
 
     # variation of distance formula
     ((x2-x1)**2 + (y2-y1)**2)*2
   end
 
   # estimated cost to move from current_node to finish_node (heuristic)
-  def determine_h(current_node, finish_node)
+  def determine_h(current_pos, final_pos)
     # use distance formula - √(x2-x1)^2 + (y2-y1)^2
-    x1, y1 = current_node
-    x2, y2 = finish_node
+    x1, y1 = current_pos
+    x2, y2 = final_pos
 
     Math.sqrt((x2-x1)**2 + (y2-y1)**2)
   end
@@ -170,7 +197,4 @@ end
 
 ms = MazeSolver.new
 ms.build_move_tree
-p ms.maze
-p ms.determine_start
-p ms.determine_end
-p ms.determine_best_path
+ms.construct_path
