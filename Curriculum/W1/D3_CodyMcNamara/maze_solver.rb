@@ -93,6 +93,7 @@ class MazeSolver
         current_node = path.last
       elsif best_node.value == determine_end
         done = true
+        write_to_file('maze_solved.txt')
       else
         f_value = 1000
         path << best_node
@@ -101,7 +102,6 @@ class MazeSolver
         self.maze[best_node.value[0]][best_node.value[1]] = "X"
       end
 
-      render
     end
   end
 
@@ -110,8 +110,16 @@ class MazeSolver
   # renders maze
   def render
     self.maze.each do |arr|
-      p arr
+      p arr.join("")
     end
+  end
+
+  def write_to_file(file_name)
+    f = File.open(file_name, 'w+')
+    self.maze.each do |arr|
+      f.puts arr.join("")
+    end
+    f.close
   end
 
   # determine start pos by searching for 'S' in .txt file
