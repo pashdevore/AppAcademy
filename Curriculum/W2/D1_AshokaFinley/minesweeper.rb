@@ -44,15 +44,10 @@ class NewGame
         end
         exit
       end
-
+      end
     end
   end
-  end
 end
-#
-#
-# def take_input
-#   get
 
 
 
