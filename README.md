@@ -164,8 +164,8 @@ _Check out the program:_ [AppAcademy][aawebsite]
 ### Day Three - [Davide Curletti][dcurletti] - ActiveRecord
 
 + Projects
-  +[Associations Exercise][associations]
-  +[URLShortener][urlshortener]
+  + [Associations Exercise][associations]
+  + [URLShortener][urlshortener]
 
 [associations]: ./Curriculum/W3/D3_DavideCurletti/AssociationsExercise-Master
 [urlshortener]: ./Curriculum/W3/D3_DavideCurletti/URLShortener
