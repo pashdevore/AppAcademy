@@ -160,3 +160,13 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 [aa_questions]: ./Curriculum/W3/D2_SebastianJay/questions_database.rb
 [sebastianrjay]: http://github.com/sebastianrjay
+
+### Day Three - [Davide Curletti][dcurletti] - ActiveRecord
+
++ Projects
+  +[Associations Exercise][associations]
+  +[URLShortener][urlshortener]
+
+[associations][./Curriculum/W3/D3_DavideCurletti/AssociationsExercise-Master]
+[urlshortener][./Curriculum/W3/D3_DavideCurletti/URLShortener]
+[dcurletti][http://github.com/dcurletti]
