@@ -167,6 +167,6 @@ _Check out the program:_ [AppAcademy][aawebsite]
   +[Associations Exercise][associations]
   +[URLShortener][urlshortener]
 
-[associations][./Curriculum/W3/D3_DavideCurletti/AssociationsExercise-Master]
-[urlshortener][./Curriculum/W3/D3_DavideCurletti/URLShortener]
-[dcurletti][http://github.com/dcurletti]
+[associations]: ./Curriculum/W3/D3_DavideCurletti/AssociationsExercise-Master
+[urlshortener]: ./Curriculum/W3/D3_DavideCurletti/URLShortener
+[dcurletti]: http://github.com/dcurletti
