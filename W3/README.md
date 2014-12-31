@@ -30,3 +30,11 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [associations]: ./D3_DavideCurletti/AssociationsExercise-Master
 [urlshortener]: ./D3_DavideCurletti/URLShortener
 [dcurletti]: http://github.com/dcurletti
+
+### Day Four - [Luke Lu][lusketeer] - ActiveRecord
+
++ Projects
+  + [Polls][polls]
+
+[polls]: ./D4_LukeLu/poll_app
+[lusketeer]: http://github.com/lusketeer
