@@ -128,7 +128,7 @@ class SQLObject
       SET
         #{col_names}
       WHERE
-        id = ?
+        #{self.class.table_name}.id = ?
     SQL
   end
 
