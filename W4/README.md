@@ -16,5 +16,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
 ### Day Two - [Connor Young][cyroth28] - HTML, ERB, and Views
 
 + Projects
+  +[Ninety-Nine Cats][99cats]
 
+[99cats]: ./D2_ConnorYoung/ninety_nine_cats
 [cyroth28]: http://github.com/cyroth28
