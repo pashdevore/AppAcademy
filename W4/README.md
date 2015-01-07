@@ -20,3 +20,10 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 [99cats]: ./D2_ConnorYoung/ninety_nine_cats
 [cyroth28]: http://github.com/cyroth28
+
+### Day Three - [Ander Olson][Catamarander] - Session & Authentication
+
++ Projects
+  + [Ninety-Nine Cats][99cats_v2]
+
+[Catamarander]: http://github.com/Catamarander
