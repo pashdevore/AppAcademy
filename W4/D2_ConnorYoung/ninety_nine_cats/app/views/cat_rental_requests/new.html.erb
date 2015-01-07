@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <title>New Cat Rental Request</title>
+</head>
+
+<body>
+  <form action="/cat_rental_requests(<%@crr%>)", method="POST"
+  <label name="cat_name">Available Cats for Rent</label>
+  <select name="cat_rental_request[cat_id]" id="cat_name">
+    <option value=""></option>
+    <%= Cat.all.each do |cat| %>
+      <option value=<%= cat.id %> > <%= cat.name %> </option>
+    <% end %>
+  </select>
+
+  <input type="submit" value="Submit Request!">
+  </form>
+</body>
+</html>
