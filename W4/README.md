@@ -26,4 +26,5 @@ _Check out the program:_ [AppAcademy][aawebsite]
 + Projects
   + [Ninety-Nine Cats][99cats_v2]
 
+[99cats_v2]: ./D3_AnderOlson/NinetyNineCats
 [Catamarander]: http://github.com/Catamarander
