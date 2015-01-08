@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NinetyNineCats</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% if current_user %>
+  <p>Hello <%= current_user.user_name.capitalize %></p>
+  <%= button_to "Logout", session_url, method: :delete %>
+<% else %>
+<p><%= button_to "Login", new_session_url, method: :get %> </p>
+
+<% end %>
+<%= yield %>
+
+</body>
+</html>

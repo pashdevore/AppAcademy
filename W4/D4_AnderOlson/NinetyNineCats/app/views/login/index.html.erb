@@ -1,0 +1,16 @@
+
+<ul>
+<% @logins.each do |login| %>
+
+  <li> <%= login.updated_at %></li>
+  <li> Log me out of this session </li>
+  <form id="form_id" action="login" method="post">
+    <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+    <input name="_method" type="hidden" value="delete">
+    <input type="hidden" name="login[unique_id]" value="<%= login.id %>">
+    <input type='submit' values="Log out">
+  </form>
+  <br>
+
+<% end %>
+</ul>

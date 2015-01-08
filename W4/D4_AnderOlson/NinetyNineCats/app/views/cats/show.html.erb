@@ -1,0 +1,36 @@
+<h1> A Cat </h1>
+<p> <%= @cat.name %></p>
+<table>
+  <tr>
+    <th> Color </th>
+    <th> Sex </th>
+    <th> Birthday </th>
+    <th> Description </th>
+  </tr>
+  <tr>
+    <td> <%= @cat.color %> </td>
+    <td> <%= @cat.sex %></td>
+    <td> <%= @cat.birth_date %></td>
+    <td> <%= @cat.description %></td>
+  </tr>
+</table>
+
+<br>
+<% @cat.cat_rental_requests.order(:start_date).each do |request|  %>
+<ul>
+  <li> Start date: <%= request.start_date %> </li>
+  <li> End date: <%= request.end_date %> </li>
+  <li> Status: <%= request.status %></li>
+  <br>
+  <% if request.status == 'PENDING' && current_user == request.owner%>
+    <form action="/rental/<%= request.id %>" method="post">
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+      <input name="new_status" type='submit' value="Approve">
+      <input name="new_status" type='submit' value="Deny">
+    </form>
+  <% end %>
+  <li><%=request.requester.user_name%></li>
+</ul>
+<% end %>
+
+<a href='/cats/<%= @cat.id %>/edit'>Edit <%= @cat.name %></a>

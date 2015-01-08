@@ -1,0 +1,7 @@
+<h3>All Rental Requests</h3>
+<% @rentals.each do |rental| %>
+  <ul>
+    <li> <%= rental.start_date %></li>
+    <li> <%= rental.end_date %></li>
+  </ul>
+<% end %>

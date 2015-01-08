@@ -1,0 +1,32 @@
+<form action="/cats/<%= @cat.id %>" method="post">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <% if cat.persisted? %>
+    <input name="_method" type="hidden" value="patch">
+  <% end %>
+
+  <label for="cat_name"> Name: </label>
+  <input name="cat[name]" id="cat_name" type="text" value="<%= @cat.name %>" ><br>
+
+  <label for="cat_birthday"> Birthday: </label>
+  <input name="cat[birth_date]" id="cat_birthday" type="date" value="<%= @cat.birth_date %>"><br>
+
+  <label for="cat_color"> Color: </label>
+  <select name="cat[color]" id="cat_color">
+
+    <option value=''></option>
+    <option value="Black" <%= 'selected=selected' if @cat.color == 'Black'%>>Black</option>
+    <option value="Brown" <%= 'selected=selected' if @cat.color == 'Brown'%>>Brown</option>
+    <option value="White" <%= 'selected=selected' if @cat.color == 'White'%>>White</option>
+  </select><br>
+
+  <input type="radio" name="cat[sex]" id="cat_sex_male" value="M"
+  <%= 'checked=checked' if @cat.sex == 'M'%>>
+  <label for="cat_sex_male"> Male </label><br>
+  <input type="radio" name="cat[sex]" id="cat_sex_female" value="F"
+  <%= 'checked=checked' if @cat.sex == 'F'%>>
+  <label for="cat_sex_female"> Female </label><br>
+
+  <label for="cat_description">Cat's description</label><br>
+  <textarea name="cat[description]" id="cat_description"><%= @cat.description %></textarea><br>
+  <input type='submit' values="Create cat!">
+</form>
