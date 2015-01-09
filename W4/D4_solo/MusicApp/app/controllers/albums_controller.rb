@@ -16,14 +16,14 @@ class AlbumsController < ApplicationController
     @album = Album.new(album_params)
 
     if @album.save
-      redirect_to :back
+      redirect_to bands_url
     else
       render :new
     end
   end
 
   def update
-    
+
   end
 
   private

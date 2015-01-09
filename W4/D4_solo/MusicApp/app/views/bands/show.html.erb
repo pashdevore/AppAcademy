@@ -8,4 +8,10 @@
   <% end %>
 </ul>
 <br><br>
+
+<% unless @band.albums.empty? %>
+  <%= link_to "Update >>", band_url, method: :patch %>
+<% end %>
+<br><br>
+
 <%= link_to "Add an Album >>", "/bands/"+ @band.id.to_s + "/albums/new" %>

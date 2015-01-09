@@ -2,7 +2,11 @@
 
 <ul>
   <% @bands.each do |band| %>
-    <li><a href="./bands/<%= band.id %>"><%= band.name %></a></li>
+    <li>
+      <a href="./bands/<%= band.id %>"><%= band.name %></a>
+      <%= button_to "Edit", "/bands/" + band.id.to_s + "/edit", method: :get %>
+      <%= button_to "Delete", "/bands/" + band.id.to_s, method: :delete %>
+    </li>
   <% end %>
 </ul>
 

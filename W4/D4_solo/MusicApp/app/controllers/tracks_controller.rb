@@ -22,6 +22,10 @@ class TracksController < ApplicationController
     render :show
   end
 
+  def update
+
+  end
+
   private
   def track_params
     params.require(:track).permit(:title, :album_id)

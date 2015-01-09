@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
   end
 
   def all_bands
-    Band.all
+    Band.order('name')
   end
 
   def login_user!(user)
