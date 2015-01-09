@@ -28,3 +28,10 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 [99cats_v2]: ./D3_AnderOlson/NinetyNineCats
 [Catamarander]: http://github.com/Catamarander
+
+### Day Four - Solo - Music App
+
++ Projects
+  + [Music App][musicapp]
+
+[musicapp]: ./D4_solo/MusicApp
