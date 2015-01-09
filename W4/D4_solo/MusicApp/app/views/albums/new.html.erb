@@ -1,0 +1,14 @@
+<h1>New Album</h1>
+
+<form action="/albums" method="post">
+  <selected name="band[name]"id="band_name" value="">
+    <% all_bands do |band| %>
+      <option value="<%= band.name %>"><%= band.name %></option>
+    <% end %>
+  </selected>
+
+  <label for="album_name">Album name:</label><br>
+  <input type="text" name="album[title]" value="<%= @album.title %>">
+
+  <input type="submit" value="Save">
+</form>

@@ -9,8 +9,3 @@ class Login < ActiveRecord::Base
   end
 
 end
-
-# @user_currently_logged_in_question = Login.find_by(user_info)
-# if @user_currently_logged_in_question
-#
-# else
