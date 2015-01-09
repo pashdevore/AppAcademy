@@ -38,3 +38,10 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 [polls]: ./D4_LukeLu/poll_app
 [lusketeer]: http://github.com/lusketeer
+
+### Day Five - Solo - ActiveRecord lite
+
++ Projects
+  + [ActiveRecord lite][arlite]
+
+[arlite]: ./D5_solo/active_record_lite
