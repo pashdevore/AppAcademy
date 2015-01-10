@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+
   def new
     @user = User.new
 
@@ -6,19 +7,26 @@ class SessionsController < ApplicationController
   end
 
   def create
-    login_user!(@user)
-
-    redirect_to "/user"
+    @user = User.find_by_credentials(params[:user][:email],
+                                     params[:user][:password])
+    if @user
+      login_user!(@user)
+      redirect_to user_url(@user)
+    else
+      @user = User.new
+      render :new
+    end
   end
 
   def destroy
-    # destroy current session
-    # 1) find current user and set their token to nil
     @user = current_user
-    @user.reset_session_token!
-    @user.token = nil
 
-    # 3) redirect to the login page
-    redirect_to "/session/new"
+    if @user
+      logout_user!(@user)
+      redirect_to new_session_url
+    else
+      @user = User.new
+      render :new
+    end
   end
 end

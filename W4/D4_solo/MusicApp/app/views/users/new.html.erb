@@ -1,15 +1,15 @@
-<h1>Welcome to MusicApp!</h1>
+<h1>Sign Up</h1>
 
-<h3>Please create a new login</h3>
+<form action="<%= users_url %>" method="post">
 
-<form action="/user" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <label for="user_email">Email:</label>
   <input type="text" name="user[email]" value="<%= @user.email %>" id="user_email">
   <br><br>
 
   <label for="user_password">Password:</label>
-  <input type="password" name="user[password]" id="user_password">
+  <input type="password" name="user[password]" value="<%= @user.password %>" id="user_password">
   <br><br>
 
-  <input type="submit" value="Create User">
+  <input type="submit" value="Sign Up">
 </form>

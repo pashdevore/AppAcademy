@@ -7,13 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <% if @user == current_user %>
-    <form action="/session" method="post">
-      <input name="_method" type="hidden" value="delete">
-      <input type="submit" value="Logout">
-    </form>
-  <% end %>
 
+<% if logged_in? %>
+<%= button_to "Log Out", session_url, method: :delete %>
+<% end %>
 <%= yield %>
 
 </body>
