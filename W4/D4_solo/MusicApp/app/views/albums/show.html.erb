@@ -2,7 +2,9 @@
 
 <ol>
   <% @album.tracks.order('ord').each do |track| %>
-  <li><%= link_to track.title, track_url(track.id) %></li>
+  <li><%= link_to track.title, track_url(track.id) %>
+      <%= button_to "Edit", edit_track_url(track), method: :get %>
+      <%= button_to "Delete", track_url(track), method: :delete %></li>
   <% end %>
 </ol>
 <br><br>

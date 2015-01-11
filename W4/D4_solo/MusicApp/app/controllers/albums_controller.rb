@@ -23,11 +23,25 @@ class AlbumsController < ApplicationController
   end
 
   def edit
+    @album = Album.find(params[:id])
+    @bands = Band.order('name')
+    @band = @album.band
 
+    if logged_in?
+      render :edit
+    else
+      redirect_to new_session_url
+    end
   end
 
   def update
+    @album = Album.find(params[:id])
 
+    if @album.update(album_params)
+      redirect_to band_url(@album.band)
+    else
+      render :edit
+    end
   end
 
   def show
@@ -37,7 +51,14 @@ class AlbumsController < ApplicationController
   end
 
   def destroy
+    @album = Album.find(params[:id])
 
+    if logged_in?
+      @album.destroy
+      redirect_to band_url(@album.band)
+    else
+      redirect_to new_session_url
+    end
   end
 
   private

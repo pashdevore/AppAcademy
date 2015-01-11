@@ -2,7 +2,9 @@
 
 <ul>
   <% @band.albums.order('title').each do |album| %>
-    <li><%= link_to album.title, album_url(album.id) %></li>
+    <li><%= link_to album.title, album_url(album.id) %>
+        <%= button_to "Edit", edit_album_url(album), method: :get %>
+        <%= button_to "Delete", album_url(album), method: :delete %></li>
   <% end %>
 </ul>
 <br><br>

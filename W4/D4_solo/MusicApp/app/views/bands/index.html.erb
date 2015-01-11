@@ -2,9 +2,11 @@
 
 <ul>
   <% @bands.each do |band| %>
-    <li><%= link_to band.name, band_url(band.id) %></li>
+    <li><%= link_to band.name, band_url(band.id) %>
+        <%= button_to "Edit", edit_band_url(band.id), method: :get%>
+        <%= button_to "Delete", band_url(band.id), method: :delete %></li>
   <% end %>
 </ul>
 <br><br>
-  
+
 <%= button_to "Add Band", new_band_url, method: :get %>

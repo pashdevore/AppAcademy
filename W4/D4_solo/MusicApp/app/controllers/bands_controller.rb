@@ -29,14 +29,18 @@ class BandsController < ApplicationController
   def edit
     @band = Band.find(params[:id])
 
-    render :edit
+    if logged_in?
+      render :edit
+    else
+      redirect_to new_session_url
+    end
   end
 
   def update
     @band = Band.find(params[:id])
 
     if @band.update(band_params)
-      redirect_to band_url(@band)
+      redirect_to bands_url
     else
       render :edit
     end
@@ -49,7 +53,15 @@ class BandsController < ApplicationController
   end
 
   def destroy
+    @bands = Band.order('name')
+    @band = Band.find(params[:id])
 
+    if logged_in?
+      @band.destroy
+      redirect_to bands_url
+    else
+      redirect_to new_session_url
+    end
   end
 
   private

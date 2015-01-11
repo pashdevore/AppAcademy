@@ -1,8 +1,9 @@
-<h1>New Track</h1>
+<% action = @track.persisted? ? track_url(@track) : tracks_url %>
+<% method = @track.persisted? ? "patch" : "post" %>
 
-<form action="/tracks" method="post">
+<form action=<%= action %> method="post">
   <input type="hidden" name="authenticity_token" value="form_authenticity_token">
-
+  <input type="hidden" name="_method" value="<%= method %>">
   <label for="album_id">Album:</label>
   <select id="album_id" name="track[album_id]">
     <% @albums.each do |album| %>
