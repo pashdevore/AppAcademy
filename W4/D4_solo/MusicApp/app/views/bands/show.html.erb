@@ -1,0 +1,11 @@
+<h1><%= @band.name %>'s Albums</h1>
+
+<ul>
+  <% @band.albums.order('title').each do |album| %>
+    <li><%= link_to album.title, album_url(album.id) %></li>
+  <% end %>
+</ul>
+<br><br>
+
+<%= button_to "Back", bands_url, method: :get %>
+<%= button_to "Add Album", new_band_album_url(@band.id), method: :get %>

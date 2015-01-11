@@ -1,0 +1,14 @@
+<h1><%= @album.title %></h1>
+
+<h4>Album: <%= @track.album.title %></h4>
+<h4>Track Number: <%= @track.ord %></h4>
+<h4>Lyrics: <%= @track.lyrics %></h4>
+<h4>Notes: </h4>
+<ul>
+  <% @track.notes.each do |note| %>
+    <li><%= note.context %></li>
+  <% end %>
+</ul>
+<br><br>
+
+<%= button_to "Back", album_url(@track.album), method: :get %>

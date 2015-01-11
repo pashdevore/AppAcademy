@@ -1,0 +1,13 @@
+<h1>Add Band</h1>
+
+<form action="/bands" method="post">
+  <input type="hidden" name="authenticity_token" value="form_authenticity_token">
+
+  <label for="band_name">Name:</label>
+  <input type="text" name="band[name]" value="<%= @band.name %>" id="band_name">
+
+  <input type="submit" value="Save">
+</form>
+<br><br>
+
+<%= button_to "Cancel", bands_url, method: :get %>

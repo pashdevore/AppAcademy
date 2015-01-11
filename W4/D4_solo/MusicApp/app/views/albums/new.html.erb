@@ -1,0 +1,32 @@
+<h1><%= @album.title %></h1>
+
+<form action="/albums" method="post">
+  <input type="hidden" name="authenticity_token" value="form_authenticity_token">
+
+  <label for="band_id">Band:</label>
+  <select id="band_id" name="album[band_id]">
+    <% @bands.each do |band| %>
+      <option value="<%= band.id %>" <% if @band == band %>selected<% end %>><%= band.name %></option>
+    <% end %>
+  </select>
+  <br><br>
+
+  <label for="album_title">Title:</label>
+  <input type="text" name="album[title]" value="<%= @album.title %>">
+  <br><br>
+
+  <label for="album_year">Year:</label>
+  <input type="number" name="album[year]" min="1900" max="2015" value="<%= @album.year %>" id="album_year">
+
+  <input type="radio" name="album[live]" id="band_live" value="Live">
+  <label for="band_live">Live</label>
+
+  <input type="radio" name="album[live]" id="band_studio" value="Studio">
+  <label for="band_studio">Studio</label>
+  <br><br>
+
+  <input type="submit" value="Save">
+</form>
+<br><br>
+
+<%= button_to "Cancel", :back, method: :get %>
