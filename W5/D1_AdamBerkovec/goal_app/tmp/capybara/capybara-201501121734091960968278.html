@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GoalApp</title>
+  <link rel="stylesheet" media="all" href="/assets/application.css" data-turbolinks-track="true" />
+  <script src="/assets/application.js" data-turbolinks-track="true"></script>
+  
+</head>
+<body>
+
+
+    <form class="button_to" method="post" action="http://www.example.com/session"><input type="hidden" name="_method" value="delete" /><input type="submit" value="Sign Out" /></form>
+
+<h1> Edit Goal </h1>
+
+
+<form id="goal" action="http://www.example.com/goals/19" method="post">
+  <input type= "hidden" name= "_method" value="patch">
+  <input type="hidden" name="authenticity_token" value="form_authenticity_token">
+
+  <label>
+    Title
+    <input type="text" name="goal[title]" value= "title">
+  </label>
+
+  <label>
+    Details
+    <textarea name="goal[details]"> details </textarea>
+  </label>
+
+  <input type= "radio" name= "goal[private_goal]" id = "public_goal" value = "false">
+  <label for= "public_goal">Public Goal</label>
+
+  <input type= "radio" name= "goal[private_goal]" id = "private_goal" value = "true">
+  <label for= "private_goal">Private Goal</label>
+  <br><br>
+
+  <input type= "radio" name= "goal[completed]" id = "completed_goal" value = "true">
+  <label for= "completed_goal">Completed</label>
+
+  <input type= "radio" name= "goal[completed]" id = "not_completed_goal" value = "false">
+  <label for= "not_completed_goal">In Progress</label>
+
+  <input type="submit" value= "Update Goal">
+</form>
+
+
+
+</body>
+</html>

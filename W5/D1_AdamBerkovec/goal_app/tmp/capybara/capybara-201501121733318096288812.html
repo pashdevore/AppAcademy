@@ -1,0 +1,141 @@
+ActiveRecord::RecordNotFound at /goals/1/edit
+=============================================
+
+> Couldn't find Goal with 'id'=1
+
+app/controllers/goals_controller.rb, line 22
+--------------------------------------------
+
+``` ruby
+   17         render :new
+   18       end
+   19     end
+   20   
+   21     def edit
+>  22       @goal = Goal.find(params[:id])
+   23   
+   24       render :edit
+   25     end
+   26   
+   27     def update
+```
+
+App backtrace
+-------------
+
+ - app/controllers/goals_controller.rb:22:in `edit'
+ - spec/features/auth_spec.rb:95:in `block (3 levels) in <top (required)>'
+
+Full backtrace
+--------------
+
+ - activerecord (4.2.0.rc1) lib/active_record/core.rb:155:in `find'
+ - app/controllers/goals_controller.rb:22:in `edit'
+ - actionpack (4.2.0.rc1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+ - actionpack (4.2.0.rc1) lib/abstract_controller/base.rb:198:in `process_action'
+ - actionpack (4.2.0.rc1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+ - actionpack (4.2.0.rc1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+ - activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:117:in `call'
+ - activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:234:in `block in halting'
+ - activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:234:in `block in halting'
+ - activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:169:in `block in halting'
+ - activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:169:in `block in halting'
+ - activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:169:in `block in halting'
+ - activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+ - activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+ - activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+ - actionpack (4.2.0.rc1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+ - actionpack (4.2.0.rc1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+ - actionpack (4.2.0.rc1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+ - activesupport (4.2.0.rc1) lib/active_support/notifications.rb:164:in `block in instrument'
+ - activesupport (4.2.0.rc1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+ - activesupport (4.2.0.rc1) lib/active_support/notifications.rb:164:in `instrument'
+ - actionpack (4.2.0.rc1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+ - actionpack (4.2.0.rc1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+ - activerecord (4.2.0.rc1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+ - actionpack (4.2.0.rc1) lib/abstract_controller/base.rb:137:in `process'
+ - actionview (4.2.0.rc1) lib/action_view/rendering.rb:30:in `process'
+ - actionpack (4.2.0.rc1) lib/action_controller/metal.rb:195:in `dispatch'
+ - actionpack (4.2.0.rc1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+ - actionpack (4.2.0.rc1) lib/action_controller/metal.rb:236:in `block in action'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/journey/router.rb:30:in `serve'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/routing/route_set.rb:800:in `call'
+ - rack (1.6.0) lib/rack/etag.rb:24:in `call'
+ - rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+ - rack (1.6.0) lib/rack/head.rb:13:in `call'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+ - rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+ - rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+ - activerecord (4.2.0.rc1) lib/active_record/query_cache.rb:36:in `call'
+ - activerecord (4.2.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+ - activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+ - activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+ - activesupport (4.2.0.rc1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+ - better_errors (2.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+ - better_errors (2.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+ - better_errors (2.1.0) lib/better_errors/middleware.rb:57:in `call'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+ - railties (4.2.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+ - railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+ - activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+ - activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+ - activesupport (4.2.0.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+ - railties (4.2.0.rc1) lib/rails/rack/logger.rb:20:in `call'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+ - rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+ - rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+ - activesupport (4.2.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+ - rack (1.6.0) lib/rack/lock.rb:17:in `call'
+ - actionpack (4.2.0.rc1) lib/action_dispatch/middleware/static.rb:113:in `call'
+ - rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+ - railties (4.2.0.rc1) lib/rails/engine.rb:518:in `call'
+ - railties (4.2.0.rc1) lib/rails/application.rb:164:in `call'
+ - rack (1.6.0) lib/rack/urlmap.rb:66:in `block in call'
+ - rack (1.6.0) lib/rack/urlmap.rb:50:in `call'
+ - rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+ - rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+ - rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+ - /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/forwardable.rb:183:in `get'
+ - capybara (2.4.4) lib/capybara/rack_test/browser.rb:60:in `process'
+ - capybara (2.4.4) lib/capybara/rack_test/browser.rb:35:in `process_and_follow_redirects'
+ - capybara (2.4.4) lib/capybara/rack_test/browser.rb:21:in `visit'
+ - capybara (2.4.4) lib/capybara/rack_test/driver.rb:42:in `visit'
+ - capybara (2.4.4) lib/capybara/session.rb:227:in `visit'
+ - capybara (2.4.4) lib/capybara/dsl.rb:51:in `block (2 levels) in <module:DSL>'
+ - rspec-rails (3.1.0) lib/rspec/rails/example/feature_example_group.rb:28:in `visit'
+ - spec/features/auth_spec.rb:95:in `block (3 levels) in <top (required)>'
+ - rspec-core (3.1.7) lib/rspec/core/example.rb:152:in `block in run'
+ - rspec-core (3.1.7) lib/rspec/core/example.rb:222:in `call'
+ - rspec-rails (3.1.0) lib/rspec/rails/adapters.rb:72:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+ - rspec-core (3.1.7) lib/rspec/core/example.rb:322:in `instance_exec'
+ - rspec-core (3.1.7) lib/rspec/core/hooks.rb:380:in `execute_with'
+ - rspec-core (3.1.7) lib/rspec/core/hooks.rb:446:in `block (2 levels) in run'
+ - rspec-core (3.1.7) lib/rspec/core/example.rb:222:in `call'
+ - rspec-core (3.1.7) lib/rspec/core/hooks.rb:447:in `run'
+ - rspec-core (3.1.7) lib/rspec/core/hooks.rb:500:in `run'
+ - rspec-core (3.1.7) lib/rspec/core/example.rb:331:in `with_around_example_hooks'
+ - rspec-core (3.1.7) lib/rspec/core/example.rb:149:in `run'
+ - rspec-core (3.1.7) lib/rspec/core/example_group.rb:490:in `block in run_examples'
+ - rspec-core (3.1.7) lib/rspec/core/example_group.rb:486:in `run_examples'
+ - rspec-core (3.1.7) lib/rspec/core/example_group.rb:453:in `run'
+ - rspec-core (3.1.7) lib/rspec/core/example_group.rb:454:in `block in run'
+ - rspec-core (3.1.7) lib/rspec/core/example_group.rb:454:in `run'
+ - rspec-core (3.1.7) lib/rspec/core/runner.rb:111:in `block (2 levels) in run_specs'
+ - rspec-core (3.1.7) lib/rspec/core/runner.rb:111:in `block in run_specs'
+ - rspec-core (3.1.7) lib/rspec/core/reporter.rb:53:in `report'
+ - rspec-core (3.1.7) lib/rspec/core/runner.rb:107:in `run_specs'
+ - rspec-core (3.1.7) lib/rspec/core/runner.rb:85:in `run'
+ - rspec-core (3.1.7) lib/rspec/core/runner.rb:69:in `run'
+ - rspec-core (3.1.7) lib/rspec/core/runner.rb:37:in `invoke'
+ - rspec-core (3.1.7) exe/rspec:4:in `<top (required)>'
+ - /Users/appacademy/.rbenv/versions/2.1.2/bin/rspec:23:in `<main>'
+

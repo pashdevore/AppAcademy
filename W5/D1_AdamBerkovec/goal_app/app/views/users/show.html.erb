@@ -1,0 +1,6 @@
+<h1>Welcome <%= @user.username %></h1>
+
+<%= render "goal" %>
+
+<br><br>
+<%= button_to "Create Goal", new_goal_url, method: :get %>

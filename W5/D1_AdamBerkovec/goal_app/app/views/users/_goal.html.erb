@@ -1,0 +1,34 @@
+<h1>Public Goals</h1>
+<% @goals.each do |goal| %>
+  <%if goal.private_goal == false %>
+  <%=goal.title%>
+  <br>
+  <%= goal.details %>
+  <br>
+
+  <% if goal.completed %>
+    <h5><%= "Completed" %></h5>
+  <% end %>
+
+  <%= button_to "Edit Goal", edit_goal_url(goal.id), method: :get %>
+  <%= button_to "Delete Goal", goal_url(goal.id), method: :delete %>
+  <%end%>
+<%end%>
+
+
+<h1>Private Goals</h1>
+<% @goals.each do |goal| %>
+  <%if goal.private_goal == true && goal.user_id == current_user.id %>
+  <%=goal.title%>
+  <br>
+  <%= goal.details %>
+  <br>
+
+  <% if goal.completed %>
+    <h5><%= "Completed" %></h5>
+  <% end %>
+
+  <%= button_to "Edit Goal", edit_goal_url(goal.id), method: :get %>
+  <%= button_to "Delete Goal", goal_url(goal.id), method: :delete %>
+  <%end%>
+<%end%>
