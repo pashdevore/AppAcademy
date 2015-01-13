@@ -41,12 +41,64 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + Rails Forms
   + Layouts, Rendering, Partials, and Helpers
 
-+ [Week Five][w5] - Rails II
++ [**Week Five**][w5] - **Rails II**
   + Request-Response Lifecycle
   + Cookies & Sessions
   + Parameters
   + Advanced Forms
   + ActionMailer & E-mail
+
++ [Week Six][w6] - Advanced Rails & JavaScript I
+  + Metaprogramming - Rebuilding Rails (Lite)
+    + ActiveRecord Lite
+    + WEBrick Server Configuration
+    + ActionController Lite
+    + Router with Regular Expressions
+    + Rendering & Processing ERB Templates
+  + Basic & Intermediate Javascript
+  + DOM Traversal & Manipulation
+  + JavaScript Closures & 'this'
+  + Prototypal Inheritance
+  + jQuery
+  + AJAX
+  + Event-Driver Programming
+
++ [Week Seven][w7] - Advanced JavaScript: Backbone.js
+  + Client-Side MVC
+  + Backbone.js
+  + Backbone.Relational
+
++ [Week Eight][w8] - Advanced Topics I & Backbone.js Design Patterns
+  + Authentication
+  + Application Development
+  + Advanced Data Structures: Dynamic Arrays & Hash Sets
+  + CSS Design & Bootstrap
+
++ [Week Nine][w9] - Capstone Project & Advanced Topics II
+  + Computational Complexity (Big O)
+  + Background Jobs
+  + Web Application Architecture
+  + WebSockets
+  + Interview Preparation & Practice
+
++ [Week Ten][w10] - Rails Topics & Libraries
+  + Paperclip & Filepicker.io
+  + Kaminari
+  + Caching
+
++ [Week Eleven][w11] - Advanced JavaScript & Full-Stack Environment
+  + Advanced JavaScript Topics
+  + Extending Backbone
+  + Deeper Cuts
+    + Databases
+    + Web Servers
+    + Browsers
+
++ [Week Twelve][w12] - Theory & Practice
+  + Advanced Algorithms - Memory Hierarchy & Sorting Functions
+  + HTML5 Topics
+  + Advanced Code Readings
+
 
 [w1]: ./W1/README.md
 [w2]: ./W2/README.md
