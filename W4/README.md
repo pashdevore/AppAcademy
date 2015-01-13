@@ -35,3 +35,11 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + [Music App][musicapp]
 
 [musicapp]: ./D4_solo/MusicApp
+
+### Day Five - [Timur Meyster][TimurM] - Polymorphic Associations, Concerns, & Decorators
+
++ Projects
+  + [Reddit Clone][reddit]
+
+[reddit]: ./D5_TimurMeyster/reddit_clone_app
+[TimurM]: http://github.com/TimurM
