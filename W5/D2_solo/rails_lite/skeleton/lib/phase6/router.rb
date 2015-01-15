@@ -45,11 +45,7 @@ module Phase6
     # evaluate the proc in the context of the instance
     # for syntactic sugar :)
     def draw(&proc)
-      router = Phase6::Router.new
-      router.draw do
-        get Regexp.new("^/cats$"), Cats2Controller, :index
-        get Regexp.new("^/cats/(\\d+)/statuses$"), StatusesController, :index
-      end
+      instance_eval(&proc)
     end
 
     # make each of these methods that
@@ -65,14 +61,7 @@ module Phase6
 
     # should return the route that matches this request
     def match(req)
-      match = nil
-      @routes.each do |route|
-        if route.matches?(req)
-          match = route
-        end
-      end
-
-      match
+      routes.find { |route| route.matches?(req) }
     end
 
     # either throw 404 or call run on a matched route

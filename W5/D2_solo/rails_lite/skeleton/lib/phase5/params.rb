@@ -25,22 +25,18 @@ module Phase5
         end
       end
 
-      unless route_params.nil?
-        route_params.each do |key, value|
-          @params[key] = value
-        end
-      end
+      @params.merge!(route_params)
     end
 
     def [](key)
-      @params[key]
+      @params[key.to_s]
     end
 
     def to_s
       @params.to_json.to_s
     end
 
-    # class AttributeNotFoundError < ArgumentError; end;
+    class AttributeNotFoundError < ArgumentError; end;
 
     private
     # this should return deeply nested hash
