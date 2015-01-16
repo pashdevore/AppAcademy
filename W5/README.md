@@ -1,7 +1,7 @@
 # App Academy Projects
 
 _Check out the program:_ [AppAcademy][aawebsite]
-[aawebsite]: http://www.appacademy.io
+[aawebsite]: https://www.appacademy.io
 
 ## Week Five
 
@@ -11,8 +11,19 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + [Goal App][goalapp]
 
 [goalapp]: ./D1_AdamBerkovec/goal_app
-[ajberk]: http://github.com/ajberk
+[ajberk]: https://github.com/ajberk
 
-### Day Two - Solo - Rails Lite
+### Day Two + Three - Solo - Rails Lite
 
 + Projects
+  + [Rails Lite][railslite]
+
+[railslite]: ./D2+D3_solo/rails_lite/
+
+### Day Four - [Khulani Malone][khulani] JavaScript Intro
+
++ Projects
+  + [Intro JavaScript Problems][javascript]
+
+[javascript]: ./D4_KhulaniMalone/
+[khulani]: https://github.com/khulani
