@@ -27,3 +27,16 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 [javascript]: ./D4_KhulaniMalone/
 [khulani]: https://github.com/khulani
+
+### Day Five - [Khaaliq DeJan][MisterDeejay] - JavaScript Intro
+
++ Projects
+  + [Intro to Callbacks: File I/O][callbacks]
+  + [Ways to Call a Function][myBind]
+  + [Towers of Hanoi][toh]
+  + Tic-Tac-Toe
+
+[callbacks]: ./D5_KhaaliqDeJan/Callback\\FileIO/
+[myBind]: ./D5_KhaaliqDeJan/myBind.js
+[toh]: ./D5_KhaaliqDeJan/towersOfHanoi.js
+[MisterDeejay]: https://github.com/MisterDeejay
