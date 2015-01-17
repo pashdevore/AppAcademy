@@ -36,7 +36,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + [Towers of Hanoi][toh]
   + Tic-Tac-Toe
 
-[callbacks]: ./D5_KhaaliqDeJan/Callback\/FileIO/
+[callbacks]: ./D5_KhaaliqDeJan/Callback:FileIO/
 [myBind]: ./D5_KhaaliqDeJan/myBind.js
 [toh]: ./D5_KhaaliqDeJan/towersOfHanoi.js
 [MisterDeejay]: https://github.com/MisterDeejay
