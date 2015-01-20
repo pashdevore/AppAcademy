@@ -41,14 +41,14 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + Rails Forms
   + Layouts, Rendering, Partials, and Helpers
 
-+ [**Week Five**][w5] - **Rails II**
++ [Week Five][w5] - Rails II
   + Request-Response Lifecycle
   + Cookies & Sessions
   + Parameters
   + Advanced Forms
   + ActionMailer & E-mail
 
-+ Week Six - Advanced Rails & JavaScript I
++ [**Week Six**] - [**Advanced Rails & JavaScript I**]
   + Metaprogramming - Rebuilding Rails (Lite)
     + ActiveRecord Lite
     + WEBrick Server Configuration
@@ -105,3 +105,4 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [w3]: ./W3/README.md
 [w4]: ./W4/README.md
 [w5]: ./W5/README.md
+[w6]: ./W6/README.md
