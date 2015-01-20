@@ -48,7 +48,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + Advanced Forms
   + ActionMailer & E-mail
 
-+ [**Week Six**] - [**Advanced Rails & JavaScript I**]
++ [**Week Six**][w6] - **Advanced Rails & JavaScript I**
   + Metaprogramming - Rebuilding Rails (Lite)
     + ActiveRecord Lite
     + WEBrick Server Configuration
