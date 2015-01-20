@@ -11,5 +11,5 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + [Asteroids][asteroids_code]
   + [Demo][asteroids_demo]
 
-[asteroids_code]: ./D1_SabiceEads
+[asteroids_code]: ./D1_SabiceEads/Asteroids
 [asteroids_demo]: https://pashdevore.github.io/asteroids
