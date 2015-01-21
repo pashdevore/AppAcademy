@@ -13,3 +13,17 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 [asteroids_code]: ./D1_SabiceEads/Asteroids
 [asteroids_demo]: https://pashdevore.github.io/asteroids
+
+### Day Two - [Gautam Srinivasan][huchmo] - Cascading Style Sheets
+
++ Projects
+  + [CSS Friends][cssfriends]
+
+[cssfriends]: ./D2_GautamSrinivasan/skeleton/
+[huchmo]: https://github.com/huchmo
+
+[MisterDeeJay]: https://github.com/MisterDeejay
+
+### Day Three - [Eric Hsu][] - jQuery
+
++ Projects
