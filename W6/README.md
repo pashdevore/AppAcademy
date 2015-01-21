@@ -24,6 +24,8 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 [MisterDeeJay]: https://github.com/MisterDeejay
 
-### Day Three - [Eric Hsu][] - jQuery
+### Day Three - [Eric Hsu][erichsu7] - jQuery
 
 + Projects
+
+[erichsu7]: https://github.com/erichsu7
