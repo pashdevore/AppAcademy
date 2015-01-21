@@ -1,0 +1,33 @@
+/* PHASE 3: Layout */
+
+.content-group {
+  position: relative;
+  width: 900px;
+  margin:auto;
+  min-height: 200px;
+}
+
+.content-group:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 296px;
+  wide: 1px;
+  border: 1px ;
+}
+.content-sidebar {
+  min-height: inherit;
+  width: 296px;
+  float: left;
+  border: 1px solid lightgrey;
+
+}
+.content-main {
+  min-height: inherit;
+  width: 573px;
+  float: left;
+  border: 1px solid lightgrey;
+
+}

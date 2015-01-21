@@ -1,0 +1,33 @@
+/* PHASE 5: Cats */
+.content-header {
+  position: relative;
+  height: 200px;
+  width: 900px;
+  background: url(../cute_cat.jpg);
+  margin: auto;
+  color: black;
+}
+
+.title-header {
+  margin-left: 200px;
+  margin-top: 150px;
+  color: black;
+  position: absolute;
+  font-size: 24pt;
+}
+
+.content-header-add-friend {
+  margin-left: 700px;
+  margin-top: 140px;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: lightgrey;
+  border-radius: 10px;
+  color: black;
+  position: absolute;
+}
+
+.content-header-add-friend:hover {
+  background-color: grey;
+  color: white;
+}

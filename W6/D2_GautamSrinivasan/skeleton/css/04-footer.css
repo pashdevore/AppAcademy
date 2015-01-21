@@ -1,0 +1,20 @@
+/* PHASE 4: Footer */
+.footer {
+  display: block;
+  width: 900px;
+  height: 20px;
+  margin: auto;
+  padding: 15px 0;
+  border: 1px solid lightgrey;
+  border-radius: 0 0 5px 5px;
+}
+.footer-nav h1 {
+  color: purple;
+  float: left;
+  margin-right: 400px;
+}
+.footer-nav li {
+  color: black;
+  float:left;
+  margin-left: 30px;
+}
