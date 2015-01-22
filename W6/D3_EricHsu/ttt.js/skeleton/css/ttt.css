@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  height: inherit;
+}
+
+/*body {
+  position: absolute;
+  width: 100%;
+}*/
+
+.header-title {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 72px;
+}
+
+.result {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  box-sizing: content-box;
+  border: 5px solid black;
+}
+
+.row {
+  height: 100px;
+  width: 300px;
+}
+
+.cell {
+  float: left;
+  height: inherit;
+  width: 100px;
+  padding: 15px;
+  border: 5px solid black;
+}
+
+.cell:hover {
+  background-color: yellow;
+}
+
+.blank {
+  content: "";
+  background-color: gray;
+  cursor: pointer;
+}
+
+.x {
+  background-color: white;
+  color: blue;
+  font-size: 36pt;
+  text-align: center;
+}
+
+.o {
+  background-color: white;
+  color: red;
+  font-size: 36pt;
+  text-align: center;
+}
+
+.x:hover, .o:hover {
+  background-color: white;
+  cursor: default;
+}
+
+.done, .done:hover {
+  background-color: white;
+  cursor: default;
+}
+
+.winner, .winner:hover {
+  background-color: chartreuse;
+}
