@@ -27,5 +27,19 @@ _Check out the program:_ [AppAcademy][aawebsite]
 ### Day Three - [Eric Hsu][erichsu7] - jQuery
 
 + Projects
+  + [Tic-Tac-Toe][tictactoe]
+  + [Towers of Hanoi][towers]
 
+[tictactoe]: ./D3_EricHsu/ttt.js/
+[towers]: ./D3_EricHsu/towers.js/
 [erichsu7]: https://github.com/erichsu7
+
+### Day Four - [Aaron Ulbricht][ShIxtan] - jQuery Plugins
+
++ Projects
+ + [Corgi Tags][corgi]
+ + [Kitten Carousel][kitten]
+ + [Thumbnails][thumbs]
+ + [Zoomable][zoom]
+
+[ShIxtan]: https://github.com/ShIxtan
