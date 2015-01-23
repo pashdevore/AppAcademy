@@ -42,4 +42,8 @@ _Check out the program:_ [AppAcademy][aawebsite]
  + [Thumbnails][thumbs]
  + [Zoomable][zoom]
 
+[corgi]: ./D4_AaronUlbricht/tabs
+[kitten]: ./D4_AaronUlbricht/carousel
+[thumbs]: ./D4_AaronUlbricht/thumbnails
+[zoom]: ./D4_AaronUlbricht/zoomable
 [ShIxtan]: https://github.com/ShIxtan
