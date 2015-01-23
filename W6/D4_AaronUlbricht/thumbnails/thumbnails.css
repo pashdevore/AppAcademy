@@ -1,0 +1,59 @@
+/** {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}*/
+
+.gutter-images {
+  width: 85%;
+  position: relative;
+  left: 8%;
+  height: 72px;
+}
+
+.gutter-images img {
+  position: block;
+  width: 20%;
+  float: left;
+}
+
+.thumbnails {
+  position: relative;
+  width: 400px;
+  margin: auto;
+}
+
+.active {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+.active img {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+div.gutter {
+  position: relative;
+}
+
+a.nav:last-child {
+  left: 95%;
+}
+
+a.nav {
+  text-decoration: none;
+  width: 5%;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 42pt;
+}
+
+a.nav:after {
+  content: "";
+  clear: both;
+}
