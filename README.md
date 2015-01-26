@@ -48,7 +48,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + Advanced Forms
   + ActionMailer & E-mail
 
-+ [**Week Six**][w6] - **Advanced Rails & JavaScript I**
++ [Week Six][w6] - **Advanced Rails & JavaScript I**
   + Metaprogramming - Rebuilding Rails (Lite)
     + ActiveRecord Lite
     + WEBrick Server Configuration
@@ -63,7 +63,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + AJAX
   + Event-Driver Programming
 
-+ Week Seven - Advanced JavaScript: Backbone.js
++ [**Week Seven**][w7] - **Advanced JavaScript: Backbone.js**
   + Client-Side MVC
   + Backbone.js
   + Backbone.Relational
@@ -106,3 +106,4 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [w4]: ./W4/README.md
 [w5]: ./W5/README.md
 [w6]: ./W6/README.md
+[w7]: ./W7/README.md
