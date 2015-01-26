@@ -12,15 +12,14 @@
     var that = this;
     $(".cell").on("click", function(event) {
       if(!that.$game.isOver()) {
-        var currentTarget = event.currentTarget;
-        var currentTarget = $(currentTarget);
+        var currentTarget = $(event.currentTarget);
         if(currentTarget.attr('class') === 'cell blank') {
           that.makeMove(currentTarget);
         } else {
           alert("You can't place a mark here!");
         }
       }
-    })
+    });
   };
 
   View.prototype.makeMove = function ($square) {
