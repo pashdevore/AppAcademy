@@ -30,8 +30,8 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + [Tic-Tac-Toe][tictactoe]
   + [Towers of Hanoi][towers]
 
-[tictactoe]: ./D3_EricHsu/ttt.js/
-[towers]: ./D3_EricHsu/towers.js/
+[tictactoe]: ./D3_EricHsu/ttt.js/skeleton
+[towers]: ./D3_EricHsu/towers.js/skeleton
 [erichsu7]: https://github.com/erichsu7
 
 ### Day Four - [Aaron Ulbricht][ShIxtan] - jQuery Plugins
@@ -47,3 +47,11 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [thumbs]: ./D4_AaronUlbricht/thumbnails
 [zoom]: ./D4_AaronUlbricht/zoomable
 [ShIxtan]: https://github.com/ShIxtan
+
+### Day Five - [William Creager][willcreager] - AJAX
+
++ Projects
+  + [AjaxTwitter][twitter]
+
+[twitter]: ./D5_WilliamCreager/skeleton
+[willcreager]: https://github.com/willcreager
