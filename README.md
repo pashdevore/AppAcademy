@@ -63,7 +63,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + AJAX
   + Event-Driver Programming
 
-+ [**Week Seven**][w7] - **Advanced JavaScript: Backbone.js**
++ :point_right:[**Week Seven**][w7] - **Advanced JavaScript: Backbone.js**
   + Client-Side MVC
   + Backbone.js
   + Backbone.Relational
