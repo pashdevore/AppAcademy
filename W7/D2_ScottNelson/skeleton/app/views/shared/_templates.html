@@ -1,0 +1,42 @@
+<script type="text/template" id="pokemon-list-item-template">
+  <li class="poke-info" data-id='<%%= pokemon.get('id') %>'>
+  <img src="<%%= pokemon.escape('image_url') %>">
+    <ul class="pokemon-list">
+      <li>Name: <%%= pokemon.escape('name') %></li>
+      <li>Type: <%%= pokemon.escape('poke_type') %></li>
+    </ul>
+  </li>
+</script>
+
+<script type="text/template" id="pokemon-detail-template">
+  <li class="poke-info" data-id='<%%= pokemon.get('id') %>'>
+  <img src="<%%= pokemon.escape('image_url') %>">
+  <ul class="detail">
+    <li>Name: <%%= pokemon.escape('name') %></li>
+    <li>Type: <%%= pokemon.escape('poke_type') %></li>
+    <li>Attack: <%%= pokemon.escape('attack') %></li>
+    <li>Defense: <%%= pokemon.escape('defense') %></li>
+    <li>Moves: <%%= pokemon.escape('moves') %></li>
+  </ul>
+</li>
+</script>
+
+<script type="text/template" id="toy-list-item-template">
+  <li data-id="<%%= toy.get('id') %>" data-pokemon-id="<%%= toy.get('pokemon_id') %>" class="toy-list-item">Name: <%%= toy.escape("name") %></li>
+  <li data-id="<%%= toy.get('id') %>" data-pokemon-id="<%%= toy.get('pokemon_id') %>" class="toy-list-item">Happiness: <%%= toy.escape("happiness") %></li>
+  <li data-id="<%%= toy.get('id') %>" data-pokemon-id="<%%= toy.get('pokemon_id') %>" class="toy-list-item">Price: <%%= toy.escape("price") %></li>
+</script>
+
+<script type="text/template" id="toy-detail-template">
+  <div class="toy-detail">
+  <img src="<%%= toy.escape('image_url') %>">
+  <ul >
+    <li>Name: <%%= toy.get('name') %></li>
+    <li>Happiness: <%%= toy.get('happiness') %></li>
+    <li>Price: <%%= toy.get('price') %></li>
+  </ul>
+  </div>
+</script>
+
+<script type="text/template" id="pokemon-form-template">
+</script>
