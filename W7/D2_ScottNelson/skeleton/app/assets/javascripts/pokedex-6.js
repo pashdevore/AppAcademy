@@ -14,7 +14,7 @@ Pokedex.Router = Backbone.Router.extend({
       pokeDetail.append(pokeView.$el);
       pokeView.refreshPokemon();
       console.log("about to call toy callback");
-      callback && callback();
+      // callback && callback();
     }.bind(this));
 
     return this;

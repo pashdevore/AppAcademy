@@ -18,6 +18,9 @@ Pokedex.Views.PokemonIndex = Backbone.View.extend({
     this.collection.fetch({
       success: (function () {
         this.render();
+        //options.success is a success callback function in the options hash
+        //if it is there, check that it is there
+        //if the check (first part of &&) is true execute the next part of the &&
         options.success && options.success();
       }).bind(this)
     });
