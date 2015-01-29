@@ -19,4 +19,12 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + [Pokedex][pokedex2]
 
 [pokedex2]: ./D2_ScottNelson/skeleton
-[NelsonScott]: https://github.com/NelsonScott 
+[NelsonScott]: https://github.com/NelsonScott
+
+### Day Three - [Saikat Bhadra][saikatbhadra] - Backbone.js
+
++ Projects
+  + [Journal][journal]
+
+[journal]: ./D3_SaikatBhadra/Journal
+[saikatbhadra]: https://github.com/saikatbhadra
