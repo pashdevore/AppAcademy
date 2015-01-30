@@ -34,5 +34,5 @@ _Check out the program:_ [AppAcademy][aawebsite]
 + Projects
   + [News Reader][newsreader]
 
-[newsreader]: ./D4_DanaYakoobinsky
+[newsreader]: ./D4_DanaYakoobinsky/news-reader-master/skeleton
 [ladyd252]: https://github.com/ladyd252
