@@ -28,3 +28,11 @@ _Check out the program:_ [AppAcademy][aawebsite]
 
 [journal]: ./D3_SaikatBhadra/Journal
 [saikatbhadra]: https://github.com/saikatbhadra
+
+### Day Four - [Dana Yakoobinsky][ladyd252] - Backbone.js
+
++ Projects
+  + [News Reader][newsreader]
+
+[newsreader]: ./D4_DanaYakoobinsky
+[ladyd252]: https://github.com/ladyd252
