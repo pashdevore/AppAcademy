@@ -1,0 +1,6 @@
+<button class="refresh-btn">Reload</button>
+<ul>
+<% entries.each(function(entry){%>
+    <li> <%= entry.escape('title') %></li>
+  <%})%>
+</ul>
