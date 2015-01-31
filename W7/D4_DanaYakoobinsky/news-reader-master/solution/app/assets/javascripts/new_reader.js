@@ -24,7 +24,7 @@ window.NewReader = {
 Backbone.CompositeView = Backbone.View.extend({
   subviews: function(selector) {
     this._subviews = this._subviews || {};
-    
+
     if (!selector) {
       return this._subviews;
     } else {
@@ -32,17 +32,17 @@ Backbone.CompositeView = Backbone.View.extend({
       return this._subviews[selector];
     }
   },
-  
+
   addSubview: function(selector, subview) {
     this.subviews(selector).push(subview);
     this.attachSubview(selector, subview.render());
   },
-  
+
   attachSubview: function (selector, subview) {
     this.$(selector).append(subview.$el);
     subview.delegateEvents();
   },
-  
+
   attachSubviews: function() {
     var view = this;
     _(view.subviews()).each(function (subviews, selector) {
@@ -52,7 +52,7 @@ Backbone.CompositeView = Backbone.View.extend({
       })
     })
   },
-  
+
   remove: function() {
     Backbone.View.prototype.remove.call(this);
     _(this.subviews()).each(function (subviews, selector) {
