@@ -15,3 +15,71 @@
 
 @import "bootstrap";
 @import "font-awesome";
+
+/* Boards Index View */
+
+.boards li{
+  list-style: none;
+  background-color: rgb(35, 113, 159);
+  border-radius: 10px;
+  width: 200px;
+  height: 70px;
+  float: left;
+  margin: 10px;
+}
+
+.boards li:hover{
+  background-color: rgb(25, 80, 119);
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.boards li a{
+  color: white;
+  display: block;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.boards li a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+/* Board Show View */
+
+.board-header {
+  color: white;
+  height: 80px;
+  padding-left: 10px;
+}
+
+.list-header-container{
+  float: left;
+  height: 300px;
+  width: 200px;
+  background-color: lightgrey;
+  border-radius: 20px;
+  margin: 0 20px;
+}
+
+.list-header{
+  padding: 10px;
+}
+
+.card-container ul{
+  padding: 0px;
+}
+
+.card-container li{
+  list-style: none;
+  background-color: white;
+  margin: 10px 5px;
+  padding: 2px 0;
+  border: 1px white solid;
+}
+
+.card-container li:hover{
+  box-shadow: 0px 0px 4px 2px #888888;
+}
