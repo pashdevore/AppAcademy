@@ -1,10 +1,11 @@
 Journal.Views.PostShow = Backbone.View.extend({
   events: {
-    "click .delete": "removePost"
+    "click .delete": "removePost",
+    "click li": "showModal"
   },
 
   initialize: function(){
-    this.listenTo(this.model, "sync", this.render)
+    this.listenTo(this.model, "sync", this.render);
   },
 
   template: JST['post_show'],
@@ -21,5 +22,9 @@ Journal.Views.PostShow = Backbone.View.extend({
 
   removePost: function(){
     this.model.destroy();
+  },
+
+  showModal: function(){
+
   }
 });
