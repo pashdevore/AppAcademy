@@ -2,8 +2,11 @@ TrelloClone.Views.CardShow = Backbone.CompositeView.extend({
   template: JST["cards/show"],
 
   events: {
-    "click li": "showModal",
     "click button.glyphicon-remove": "delete"
+  },
+
+  initialize: function(){
+    this.listenTo(this.model, "sync", this.render);
   },
 
   render: function(){
@@ -16,7 +19,11 @@ TrelloClone.Views.CardShow = Backbone.CompositeView.extend({
   },
 
   delete: function(){
-    var id = this.model.id;
-    
+    debugger
+    this.model.destroy({
+      success: function(){
+        alert('destroyed');
+      }
+    });
   }
 });

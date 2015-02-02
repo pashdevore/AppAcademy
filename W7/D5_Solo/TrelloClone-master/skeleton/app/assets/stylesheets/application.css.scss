@@ -91,5 +91,19 @@ button.glyphicon-remove {
 
 .card-container li:hover button.glyphicon-remove {
   float: right;
-  display: inline;  
+  display: inline;
+}
+
+.add-list a{
+
+}
+
+form.form {
+  display: none;
+  float: left;
+}
+
+form text-area{
+  float: left;
+  width: 200px;
 }
