@@ -6,7 +6,7 @@ window.TrelloClone = {
   initialize: function() {
     new TrelloClone.Routers.Router();
     Backbone.history.start();
-  }
+  },
 };
 
 $(document).ready(function(){

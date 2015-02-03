@@ -14,6 +14,7 @@ TrelloClone.Views.BoardsIndex = Backbone.View.extend({
     });
 
     this.$el.html(content);
+    $(".boards").sortable();
     return this;
-  }
+  },
 });

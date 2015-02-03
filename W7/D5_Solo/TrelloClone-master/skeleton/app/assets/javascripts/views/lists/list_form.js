@@ -23,7 +23,7 @@ TrelloClone.Views.ListForm = Backbone.View.extend({
 
   createList: function(event){
     if(this.$("textarea").val() !== ""){
-      this.collection.create({
+      this.collection.add({
         title: this.$("textarea").val(),
         board_id: this.collection.board.id
       }, { wait: true });

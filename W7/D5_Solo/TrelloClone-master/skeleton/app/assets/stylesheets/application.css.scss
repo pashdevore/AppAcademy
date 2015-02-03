@@ -49,6 +49,10 @@
 
 /* Board Show View */
 
+.lists-wrapper{
+  height: 300px;
+}
+
 .board-header {
   color: white;
   height: 80px;
@@ -65,11 +69,22 @@
 }
 
 .list-header{
-  padding: 10px;
+  padding: 10px
 }
 
-.card-container ul{
+.card-add-btn{
+  margin-left: 136px;
+  display: none;
+}
+
+.list-header-container:hover .card-add-btn{
+  display: inline;
+  margin-left: 136px;
+}
+
+.card-container{
   padding: 0px;
+  min-height: 5px;
 }
 
 .card-container li{
@@ -81,7 +96,7 @@
 }
 
 .card-container li:hover{
-  box-shadow: 0px 0px 4px 2px #888888;
+  // box-shadow: 0px 0px 4px 2px #888888;
 }
 
 button.glyphicon-remove {
