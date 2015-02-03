@@ -24,7 +24,7 @@ module Api
 
     def destroy
       @card = Card.find(params[:id])
-      @card destroy
+      @card.destroy
       render json: {}
     end
 

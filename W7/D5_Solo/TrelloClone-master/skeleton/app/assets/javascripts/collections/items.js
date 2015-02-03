@@ -1,4 +1,4 @@
 TrelloClone.Collections.Items = Backbone.Collection.extend({
-  urlRoot: "api/items",
+  url: "api/items",
   model: TrelloClone.Models.Item
 });

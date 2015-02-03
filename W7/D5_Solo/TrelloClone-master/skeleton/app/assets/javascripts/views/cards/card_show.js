@@ -26,6 +26,6 @@ TrelloClone.Views.CardShow = Backbone.CompositeView.extend({
   },
 
   addCard: function(){
-
+    
   }
 });
