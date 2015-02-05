@@ -63,12 +63,12 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + AJAX
   + Event-Driver Programming
 
-+ :point_right: [**Week Seven**][w7] - **Advanced JavaScript: Backbone.js**
++ [Week Seven][w7] - Advanced JavaScript: Backbone.js
   + Client-Side MVC
   + Backbone.js
   + Backbone.Relational
 
-+ Week Eight - Advanced Topics I & Backbone.js Design Patterns
++ :point_right: [**Week Eight**][w8] - **Advanced Topics I & Backbone.js Design Patterns**
   + Authentication
   + Application Development
   + Advanced Data Structures: Dynamic Arrays & Hash Sets
@@ -107,3 +107,4 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [w5]: ./W5/README.md
 [w6]: ./W6/README.md
 [w7]: ./W7/README.md
+[w8]: https://github.com/pashdevore/arpeggio

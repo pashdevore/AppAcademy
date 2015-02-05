@@ -7,6 +7,10 @@ TrelloClone.Views.ListShow = Backbone.CompositeView.extend({
     this.listenTo(this.model, 'sync', this.render);
   },
 
+  events: {
+    "click button.card-add-btn": "add"
+  },
+
   attributes: function(){
     return{
       //css properties go here
@@ -38,5 +42,12 @@ TrelloClone.Views.ListShow = Backbone.CompositeView.extend({
       model: card
     });
     this.addSubview(".card-container", view);
+  },
+
+  add: function(){
+    debugger
+    var newCard = new TrelloClone.Models.Card({title: "hello", list_id:1, ord: 3, description: "boom"});
+    this.addCard(newCard);
+    newCard.save();
   }
 });
