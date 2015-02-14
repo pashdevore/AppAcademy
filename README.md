@@ -68,20 +68,20 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + Backbone.js
   + Backbone.Relational
 
-+ :point_right: [**Week Eight**][w8] - **Advanced Topics I & Backbone.js Design Patterns**
++ Week Eight - Advanced Topics I & Backbone.js Design Patterns
   + Authentication
   + Application Development
   + Advanced Data Structures: Dynamic Arrays & Hash Sets
   + CSS Design & Bootstrap
 
-+ Week Nine - Capstone Project & Advanced Topics II
++ Week Nine - [Capstone Project][arpeggio] & Advanced Topics II
   + Computational Complexity (Big O)
   + Background Jobs
   + Web Application Architecture
   + WebSockets
   + Interview Preparation & Practice
 
-+ Week Ten - Rails Topics & Libraries
++ :point_right: **Week Ten** - **Rails Topics & Libraries**
   + Paperclip & Filepicker.io
   + Kaminari
   + Caching
@@ -107,4 +107,4 @@ _Check out the program:_ [AppAcademy][aawebsite]
 [w5]: ./W5/README.md
 [w6]: ./W6/README.md
 [w7]: ./W7/README.md
-[w8]: https://github.com/pashdevore/arpeggio
+[arpeggio]: https://github.com/pashdevore/arpeggio
