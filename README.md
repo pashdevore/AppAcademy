@@ -81,7 +81,7 @@ _Check out the program:_ [AppAcademy][aawebsite]
   + WebSockets
   + Interview Preparation & Practice
 
-+ :point_right: **Week Ten** - **Rails Topics & Libraries**
++ Week Ten - Rails Topics & Libraries
   + Paperclip & Filepicker.io
   + Kaminari
   + Caching
